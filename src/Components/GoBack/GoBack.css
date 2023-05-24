@@ -1,0 +1,24 @@
+#backButton {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: none;
+    transition-property: height, width;
+    transition-duration: 0.5s;
+    color: red;
+    z-index: 3;
+    left: 25px;
+    top: 25px;
+}
+
+#backButton:hover {
+    height: 65px;
+    width: 65px;
+    color: red;
+}
+
+img {
+    z-index: inherit;
+    color: red;
+}

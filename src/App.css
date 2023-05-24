@@ -1,3 +1,8 @@
+:root {
+ 
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +41,24 @@
     transform: rotate(360deg);
   }
 }
+body {
+background: radial-gradient(circle at 50% 0%, #9588c7 15%, #c79ed5 75%);
+}
+
+#background {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  border: 20px solid red;
+  transition-property: width height;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  z-index: 1;
+}
+
