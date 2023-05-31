@@ -1,10 +1,12 @@
 import React from "react"
-import { useHistory, useLocation } from "react-router-dom"
+import { useNavigate, useLocation} from "react-router-dom"
 import arrow from './arrow-rotate-left.svg'
 import './GoBack.css'
+import { motion } from "framer-motion"
 
 export function GoBack() {
-    const history = useHistory()
+    const navigate = useNavigate()
+    
     const location = useLocation()
     if(location.pathname === '/') {
         return null
@@ -18,11 +20,15 @@ export function GoBack() {
 
        const handleClick = () => {
         backgroundTransform()
-        history.goBack()
+        navigate(-1)
        } 
   
     return (
-      <div>
+      <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      >
        
       <button onClick={handleClick} id='backButton'>
         
@@ -30,7 +36,7 @@ export function GoBack() {
       </button>
       
   
-      </div>
+      </motion.div>
     )
   
   }

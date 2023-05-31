@@ -3,6 +3,7 @@ import './Projects.css'
 import Slider from 'react-animated-slider'
 import 'react-animated-slider/build/horizontal.css';
 import "./slider-animations.css"
+import { motion } from "framer-motion";
 
 const content = [
   {
@@ -37,7 +38,12 @@ const content = [
  
 export const Projects = () => {
     return (
-        <section id="projects">
+        <motion.section id="projects"
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{ duration: 0.5, delay: 1 }}
+        exit={{opacity: 0, transition: {duration: 0.5}}}
+        >
            <h1 id='projectsHeader'>PROJECTS</h1>
             <Slider className="slider-wrapper">
       {content.map((item, index) => (
@@ -63,6 +69,6 @@ export const Projects = () => {
       ))}
     </Slider>
     
-        </section>
+        </motion.section>
     )
 }
