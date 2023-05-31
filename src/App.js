@@ -6,35 +6,38 @@ import { Pricing } from './Components/Pricing/Pricing';
 import { Projects } from './Components/Projects/Projects';
 import { Skills } from './Components/Skills/Skills';
 import { GoBack } from './Components/GoBack/GoBack';
-import { BrowserRouter as Route, Switch } from 'react-router-dom';
-
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 
 
 function App() {
+  const location = useLocation()
+
   return (
 
     <div>
       <GoBack />
       <div id="background"></div>
-      <Switch>
-        <Route path='/aboutme'>
-          <AboutMe />
-        </Route>
-        <Route path='/contact'>
-          <Contact />
-        </Route>
-        <Route path='/pricing'>
-          <Pricing />
-        </Route>
-        <Route path='/projects'>
-          <Projects />
-        </Route>
-        <Route path='/skills'>
-          <Skills />
-        </Route>
-        <Main />
-      </Switch>
+
+      <AnimatePresence mode='sync'>
+      <Routes key={location.pathname} location={location}>
+
+        <Route path='/aboutme' element={<AboutMe />} />
+
+        <Route path='/contact' element={<Contact />} />
+
+        <Route path='/pricing' element={<Pricing />} />
+
+        <Route path='/projects' element={<Projects />} />
+
+        <Route path='/skills' element={<Skills />} />
+
+      <Route path='/' element={<Main />} />
+
+      </Routes>
+      </AnimatePresence>
+      
     </div>
 
 

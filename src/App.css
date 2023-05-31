@@ -57,7 +57,7 @@ background: radial-gradient(circle at 50% 0%, #9588c7 15%, #c79ed5 75%);
   border-radius: 50%;
   border: 20px solid red;
   transition-property: width height;
-  transition-duration: 2s;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
   z-index: 1;
 }

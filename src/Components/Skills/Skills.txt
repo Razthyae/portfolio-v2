@@ -1,0 +1,22 @@
+Languages
+
+HTML
+css
+JavaScript
+TypeScript
+Sass
+
+Libraries
+
+React
+React/Redux
+Emotion React
+Framer Motion
+
+
+Version Control
+Git
+GitHub
+
+Testing
+Mocha

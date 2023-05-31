@@ -1,20 +1,24 @@
 import React from "react";
 import './AboutMe.css'
-import DJ from './1.jpg'
-import Dancer from './2.png'
-import { motion, AnimatePresence } from "framer-motion";
+import DJ from './DJ.jpg'
+import Dancer from './Dancer.jpg'
+import Musician from './Musician.jpg'
+import Editor from './Editor.png'
+import Tennis from './Tennis.jpg'
+import Gamer from './Gamer.jpg'
+import Singer from './Singer.jpg'
+import { motion} from "framer-motion";
 
 
 export const AboutMe = () => {
     return (
-        <AnimatePresence mode="wait">
-            
+        
             <motion.section id="aboutme"
                 key="aboutme"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
-                exit={{opacity: 0}}
+                exit={{opacity: 0, transition: {duration: 0.5}}}
             >
                 <h1>Hi! I'm Akash</h1>
                 <p>I'm a Front-End Developer based in Wrocław, Poland.
@@ -31,31 +35,30 @@ export const AboutMe = () => {
                         <span className="description">Dancer</span>
                     </div>
                     <div id='musician' className="tile">
-                        <img src={Dancer}></img>
+                        <img src={Musician}></img>
                         <span className="description">Musician</span>
                     </div>
                     <div id='editor' className="tile">
-                        <img src={Dancer}></img>
+                        <img src={Editor}></img>
                         <span className="description">Editor</span>
                     </div>
                 </section>
                 <h2>Hobby</h2>
                 <section id='hobby'>
                     <div id='games' className="tile">
-                        <img src={Dancer}></img>
+                        <img src={Gamer}></img>
                         <span className="description">Games (board, video) </span>
                     </div>
                     <div id='tennis' className="tile">
-                        <img src={Dancer}></img>
+                        <img src={Tennis}></img>
                         <span className="description">Tennis</span>
                     </div>
                     <div id='singing' className="tile">
-                        <img src={Dancer}></img>
+                        <img src={Singer}></img>
                         <span className="description">Singing</span>
                     </div>
                 </section>
             </motion.section>
            
-        </AnimatePresence>
     )
 }

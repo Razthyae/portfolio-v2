@@ -8,8 +8,9 @@ const navContainer = {
     
         transition: {
           when: "beforeChildren",
-          staggerChildren: 0.1,
-        
+          staggerChildren: 0.07,
+          delayChildren: 0.5
+         
         },
       },
       hidden: {
@@ -23,6 +24,7 @@ const navContainer = {
 const navButton = {
     visible: { opacity: 1},
     hidden: { opacity: 0},
+    transition: { delay: 3}
 }
 
 export const Main = () => {
@@ -36,7 +38,10 @@ export const Main = () => {
     
 
     return (
-        <section id="main">
+        <motion.section id="main"
+        transition={{duration: 3}}
+        exit={{opacity: 0}}
+        >
             .
             <motion.div className="navContainer"
  initial="hidden"
@@ -44,13 +49,13 @@ export const Main = () => {
  variants={navContainer}
             
             >
-                <motion.div className="navButtons left" variants={navButton}><Link to='/aboutme' onClick={backgroundTransform}>About Me</Link></motion.div>
-                <motion.div className="navButtons right" variants={navButton}><Link to='/skills' onClick={backgroundTransform}>Skills</Link></motion.div>
-                <motion.div className="navButtons left" variants={navButton}><Link to='/projects/' onClick={backgroundTransform}>Projects</Link></motion.div>
-                <motion.div className="navButtons right" variants={navButton}><Link to='/pricing' onClick={backgroundTransform}>Pricing</Link></motion.div>
-                <motion.div className="navButtons left" variants={navButton}><Link to='/contact' onClick={backgroundTransform}>Contact</Link></motion.div>
-                <motion.div className="navButtons right" variants={navButton}><Link to='/secret' onClick={backgroundTransform}>Secret</Link></motion.div>
+                <motion.div className="navButtons left" variants={navButton}  transition="transition" exit={{opacity: 0}} ><Link to='/aboutme' onClick={backgroundTransform}>About Me</Link></motion.div>
+                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}} ><Link to='/skills' onClick={backgroundTransform}>Skills</Link></motion.div>
+                <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/projects/' onClick={backgroundTransform}>Projects</Link></motion.div>
+                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/pricing' onClick={backgroundTransform}>Pricing</Link></motion.div>
+                <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/contact' onClick={backgroundTransform}>Contact</Link></motion.div>
+                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/secret' onClick={backgroundTransform}>Secret</Link></motion.div>
             </motion.div>
-        </section>
+        </motion.section>
     )
 }
