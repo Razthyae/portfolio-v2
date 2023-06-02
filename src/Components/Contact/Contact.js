@@ -11,7 +11,7 @@ export const Contact = () => {
             transition={{ duration: 0.5, delay: 1 }}
             exit={{ opacity: 0, transition: {duration: 0.5} }}
         >
-
+            
 
             <div className='contactWrapper'>
                 <div className="phone cta">Call me</div>
@@ -38,8 +38,6 @@ export const Contact = () => {
                     <div className="phone number">https://razthyae.github.io/</div>
                 </div>
             </a>
-
-<div id='testowydiv'> costamasd</div>
 
 
         </motion.section>
