@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import Git from './git.svg'
 import './Skills.css'
-import Html from './html.png'
+import Html from './html.svg'
 import Css from './css.svg'
 import JavaScript from './javascript.svg'
 import TypeScript from './typescript.svg'
 import ReactImg from './react.svg'
 import Redux from './redux.svg'
 import Emotion from './emotion.png'
-import Framer from './Motion.webp'
+import Framer from './framer.svg'
 import GitHub from './github.svg'
 import Mocha from './mocha.svg'
 
