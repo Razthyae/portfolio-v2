@@ -64,3 +64,9 @@
     transform: translateX(-80%);
     transition: 1.2s;
   }
+  
+  #testowydiv {
+    color: red;
+    font-size: 50px;
+    z-index: 1
+  }

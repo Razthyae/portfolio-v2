@@ -1,0 +1,59 @@
+#skills {
+    position: fixed;
+    z-index: 2;
+    color: red;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#languages,
+#libraries, 
+#versioncontrol,
+#testing {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#languages>div,
+#libraries>div,
+#versioncontrol>div,
+#testing>div {
+
+    width: 10vw;
+    height: 10vw;
+    margin: 7px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.skillsTile img {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    height: 10vw;
+    width: 10vw;
+    overflow: hidden;
+}
+.skillsTile:hover img{
+ opacity: 0.2   
+}
+
+.skillsTile:hover .skillsDescription{
+    opacity: 1
+}
+
+.skillsDescription {
+    display: block;
+    position: relative;
+    top: -6vw;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    text-align: center;
+    padding-top: 10px;
+    height: 10vw;
+    width: 10vw;
+    font-size: 30px;
+}

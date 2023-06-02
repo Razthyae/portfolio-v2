@@ -19,29 +19,23 @@
 #work>div,
 #hobby>div {
 
-    width: 10vw;
-    height: 10vw;
-    margin: 7px;
-    border-radius: 25px;
-    overflow: hidden;
+    width: 250px;
+    height: 250px;
+  margin: 1px;
+   overflow: hidden;
 }
 
 #aboutme img {
     
-    height: 10vw;
-    width: 10vw;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
 
-.tile:hover img{
-    transform: scale(1.2) rotate(10deg);
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-}
 
-.description {
+
+.aboutDescription {
     display: block;
     position: relative;
     top: -45px;
@@ -49,6 +43,36 @@
     text-align: center;
     padding-top: 10px;
     height: 30px;
-    width: 10vw;
+    width: 100%;
     
 }
+
+.aboutTileWrapper {
+    height: 100%;
+    width: 200%;
+}
+
+.aboutTileRight, .aboutTileLeft {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 0.5s;
+    
+}
+
+
+.aboutTileRight {
+    top: -201px;
+    background-color: bisque;
+}
+
+.aboutTile:hover .aboutTileLeft{
+ left: -250px;
+}
+
+.aboutTile:hover .aboutTileRight{
+    left: -250px;
+   }
