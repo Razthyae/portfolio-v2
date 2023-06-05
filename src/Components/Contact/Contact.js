@@ -13,6 +13,7 @@ export const Contact = () => {
         >
             
 
+
             <div className='contactWrapper'>
                 <div className="phone cta">Call me</div>
                 <div className="phone number">+48 796 453 528</div>

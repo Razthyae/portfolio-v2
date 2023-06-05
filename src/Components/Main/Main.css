@@ -45,3 +45,13 @@
     padding-left: 25vw;
     text-align: right;
 }
+
+#secrettext {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#secret:hover #secrettext{
+opacity: 1;
+}
+
