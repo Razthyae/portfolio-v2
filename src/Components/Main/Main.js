@@ -54,7 +54,7 @@ export const Main = () => {
                 <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/projects/' onClick={backgroundTransform}>Projects</Link></motion.div>
                 <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/pricing' onClick={backgroundTransform}>Pricing</Link></motion.div>
                 <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/contact' onClick={backgroundTransform}>Contact</Link></motion.div>
-                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/secret' onClick={backgroundTransform}>Secret</Link></motion.div>
+                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' to='/secret' onClick={backgroundTransform}>Secret</Link></motion.div>
             </motion.div>
         </motion.section>
     )

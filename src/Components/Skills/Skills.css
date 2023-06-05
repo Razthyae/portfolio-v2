@@ -1,19 +1,19 @@
 #skills {
-    position: fixed;
+    position: absolute;
+    text-align: center;
     z-index: 2;
-    color: red;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
+    
+    top: 0px;
+    width: 99vw;
 }
 
 #languages,
 #libraries, 
 #versioncontrol,
 #testing {
+    left: 15vw;
     display: flex;
-    width: 70vw;
+    width: 50vw;
     align-items: center;
     justify-content: center;
 }
@@ -23,8 +23,8 @@
 #versioncontrol>div,
 #testing>div {
 
-    width: 10vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8vw;
     margin: 7px;
     border-radius: 25px;
     overflow: hidden;
@@ -32,13 +32,13 @@
 
 .skillsTile img {
     opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-    height: 10vw;
-    width: 10vw;
+    transition: opacity 0.3s ease-in-out;
+    height: 8vw;
+    width: 8vw;
     overflow: hidden;
 }
 .skillsTile:hover img{
- opacity: 0.2   
+ opacity: 0   
 }
 
 .skillsTile:hover .skillsDescription{
@@ -50,10 +50,56 @@
     position: relative;
     top: -6vw;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     text-align: center;
     padding-top: 10px;
-    height: 10vw;
-    width: 10vw;
+    height: 8vw;
+    width: 8vw;
     font-size: 30px;
+}
+
+#skills fieldset {
+    margin: 0 auto;
+    width: 50vw;
+    
+    border-radius: 25px;
+    border: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 55px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    transition: background-color 0.5s;
+}
+
+#skills legend {
+    font-size: 40px;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#skills hr {
+    width: 70%;
+    margin: 30px auto;
+}
+
+#skills h2 {
+    
+    font-size: 30px;
+    margin: 0px;
+    transition-property: letter-spacing;
+    transition-duration: 0.2s;
+    
+}
+
+
+
+fieldset:hover {
+    background-color: rgba(21, 241, 5, 0.116)
+}
+
+#skills h1 {
+    font-size: 70px;
+    margin: 70px 0;
 }
