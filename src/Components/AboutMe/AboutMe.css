@@ -1,20 +1,44 @@
+#aboutme h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+}
 
+#aboutintro {
+    width: 50vw;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
   
   #aboutme h2 {
-    margin-top: 0px;
+    margin-top: 70px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 100;
-
+    margin-bottom: 70px;
   }
   
 #aboutme h1 {
     margin: 4%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 85px;
     font-weight: 10;
     top: 0;
   }
+
+  .introp {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #aboutmehr {
+    width: 70%;
+    margin-bottom: 10vh;
+  }
+  
 
   #aboutme {
     position: absolute;
