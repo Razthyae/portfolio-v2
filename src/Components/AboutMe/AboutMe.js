@@ -20,10 +20,21 @@ export const AboutMe = () => {
             transition={{ duration: 0.5, delay: 1 }}
             exit={{ opacity: 0, transition: { duration: 0.5 } }}
         >
+<section id='aboutintro'>
+        <h1>Hi!</h1>
+        <h3> I'm Akash Kumar and I'm a 34-years-old Front-End Developer and artist based in Wrocław, Poland.           </h3>
+        <p className='introp'>For technical info visit "Skills" and "Projects" sections. Here you can get to know about my non-programming side.
+       
+        </p>
+        <p className="introp">
+            Scroll down!
+        </p>
+        
+        </section>
+<hr id='aboutmehr'></hr>
 
 
-
-            <h2>Work</h2>
+            <h2 id='worktitle'>Work</h2>
 
             <div class="timeline">
 
@@ -42,8 +53,8 @@ export const AboutMe = () => {
                         </div>
                         <div class="timeline__event__description">
                             <p>
-                                As DJ Zeal I've been DJing at many dance festivals in Poland and abroad, entertaining dancers with my selection of zouk, bachata, kizomba and salsa.
-
+                            As DJ Zeal I've been DJing at many dance festivals in Poland and abroad (Czech Republic, Ukraine, Germany, Austria, Malta, Belarus, Netherlands), entertaining dancers with my selection of zouk, bachata, kizomba and salsa. 
+<br />I'm also creator of Sensualove Events that took place in years 2016-2018.
                             </p>
                         </div>
                     </div>
@@ -118,7 +129,7 @@ export const AboutMe = () => {
             </div>
 
 
-            <h2>Hobby</h2>
+            <h2 id='hobbytitle'>Hobby</h2>
 
             <div class="timeline">
 
