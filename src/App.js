@@ -5,6 +5,7 @@ import { Contact } from './Components/Contact/Contact';
 import { Pricing } from './Components/Pricing/Pricing';
 import { Projects } from './Components/Projects/Projects';
 import { Skills } from './Components/Skills/Skills';
+import { Logo } from './Components/Logo/Logo'
 import { GoBack } from './Components/GoBack/GoBack';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -19,7 +20,7 @@ function App() {
     <div>
       <GoBack />
       <div id="background"></div>
-
+      <Logo />
       <AnimatePresence mode='sync'>
       <Routes key={location.pathname} location={location}>
 
