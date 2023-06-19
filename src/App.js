@@ -20,7 +20,7 @@ function App() {
     <div>
       <GoBack />
       <div id="background"></div>
-      <Logo />
+      
       <AnimatePresence mode='sync'>
       <Routes key={location.pathname} location={location}>
 
@@ -34,7 +34,8 @@ function App() {
 
         <Route path='/skills' element={<Skills />} />
 
-      <Route path='/' element={<Main />} />
+      <Route path='/' element={<div><Main /><Logo /></div>} />
+      
 
       </Routes>
       </AnimatePresence>
