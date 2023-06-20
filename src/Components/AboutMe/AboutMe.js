@@ -7,6 +7,7 @@ import Editor from './Editor.png'
 import Tennis from './Tennis.jpg'
 import Gamer from './Gamer.jpg'
 import Singer from './Singer.jpg'
+import Scroll from './scroll.png'
 import { motion } from "framer-motion";
 
 
@@ -29,6 +30,14 @@ export const AboutMe = () => {
         <p className="introp">
             Scroll down!
         </p>
+
+        <div className="scrollarrows">
+        <img src={Scroll} />
+        <img src={Scroll} />
+        <img src={Scroll} />
+
+
+        </div>
         
         </section>
 <hr id='aboutmehr'></hr>
