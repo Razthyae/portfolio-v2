@@ -1,0 +1,10 @@
+#questionsContainer {
+    width: 70%;
+    height: 50%;
+    
+}
+
+.question label {
+    display: block;
+    position: relative;
+}

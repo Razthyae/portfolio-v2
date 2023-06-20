@@ -1,5 +1,8 @@
 :root {
- 
+--color-1: #4aaebd;
+--color-2: #2e806b;
+--color-3: #F7B733;
+--color-4: #ffffff;;
 }
 
 
@@ -42,7 +45,7 @@
   }
 }
 body {
-background: radial-gradient(circle at 50% 0%, #9588c7 15%, #c79ed5 75%);
+background: radial-gradient(circle at 50% 0%, #f6f9fc 15%, #f6f9fc 75%);
 }
 
 #background {
@@ -55,7 +58,7 @@ background: radial-gradient(circle at 50% 0%, #9588c7 15%, #c79ed5 75%);
   width: 40vw;
   height: 40vw;
   border-radius: 50%;
-  border: 20px solid red;
+  border: 20px solid #6c1fb4;
   transition-property: width height;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
