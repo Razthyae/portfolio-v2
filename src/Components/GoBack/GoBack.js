@@ -14,8 +14,8 @@ export function GoBack() {
 
       const backgroundTransform = () => {
         let background = document.getElementById("background")
-        background.style.width = "40vw"  
-        background.style.height = "40vw"  
+        background.style.width = "35vw"  
+        background.style.height = "35vw"  
         }  
 
        const handleClick = () => {

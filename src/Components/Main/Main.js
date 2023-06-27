@@ -42,7 +42,11 @@ export const Main = () => {
         transition={{duration: 3}}
         exit={{opacity: 0}}
         >
-            .
+            <div className='mainHeader'>
+            <h1>Front-End Developer</h1>
+            <hr />
+            <h2>Akash Kumar</h2>
+            </div>
             <motion.div className="navContainer"
  initial="hidden"
  animate="visible"

@@ -46,17 +46,18 @@
 }
 body {
 background: radial-gradient(circle at 50% 0%, #f6f9fc 15%, #f6f9fc 75%);
+overflow-x: hidden;
 }
 
 #background {
   background-color: white;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  width: 40vw;
-  height: 40vw;
+  width: 35vw;
+  height: 35vw;
   border-radius: 50%;
   border: 20px solid #6c1fb4;
   transition-property: width height;

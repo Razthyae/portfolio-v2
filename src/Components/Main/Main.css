@@ -3,7 +3,7 @@
 
 .navContainer {
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 100%;
     transform: translate(0, -50%);
 
@@ -15,7 +15,7 @@
 
 .navButtons {
     background-color: #04192e;
-    height: 130px;
+    height: 110px;
     margin-top: 25px;
     margin-bottom: 25px;
     z-index: -1;
@@ -57,4 +57,32 @@
 #secret:hover #secrettext{
 opacity: 1;
 }
+
+
+.mainHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+
+}
+
+.mainHeader hr{
+width: 40vw;
+}
+
+.mainHeader h1{
+    font-size: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.mainHeader h2 {
+    margin-top: 0vh;
+    font-size: 4vh;
+    font-weight: 400;
+}
+
 

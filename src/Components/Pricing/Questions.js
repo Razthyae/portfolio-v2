@@ -10,17 +10,14 @@ export function Questions(props) {
 
         case 1:
             const handleUsernameChange = (e) => {
-                console.log('siemanko')
                 props.setUsername(e.target.value)
             }
 
             const handleEmailChange = (e) => {
-                console.log('siemanko')
                 props.setEmail(e.target.value)
             }
 
             const handlePhoneChange = (e) => {
-                console.log('siemanko')
                 props.setPhone(e.target.value)
             }
 
@@ -28,11 +25,15 @@ export function Questions(props) {
             currQuestion = (
                 <motion.div className="question"
                 key="question1"
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0}}
+                animate={{ opacity: 1}}
                 transition={{ duration: 1 }}
                 exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <h2>Contact info:</h2>
+                    <motion.h2
+                    initial={{x: 10}}
+                    animate={{x: 0}}
+                    transition={{duration: 1}}
+                    >Contact info:</motion.h2>
                     <label>Name (required) </label>
                     <input type='text' value={props.username} onChange={handleUsernameChange}></input>
                     <label>E-mail (required) </label>
@@ -47,11 +48,15 @@ export function Questions(props) {
             currQuestion = (
                 <motion.div className="question"
                 key="question2"
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0}}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <h2>What is the purpose of your site? (business, personal, blog, portfolio etc.)<br></br> Please describe in details what would you like to achieve and how my project can help you (required)</h2>
+                    <motion.h2
+                    initial={{x: 10}}
+                    animate={{x: 0}}
+                    transition={{duration: 1}}
+                    >What is the purpose of your site? (business, personal, blog, portfolio etc.)<br></br> Please describe in details what would you like to achieve and how my project can help you (required)</motion.h2>
                     <textarea style={{ width: '100%', height: "200px" }}></textarea>
                 </motion.div>
             )
@@ -61,11 +66,14 @@ export function Questions(props) {
             currQuestion = (
                 <motion.div className="question"
                 key="question3"
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0  }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <h2>What functionalities will you need? How many subpages will there be? (menu, contact, shop, slideshow gallery etc.) (required)</h2>
+                    <motion.h2
+                    initial={{x: 10}}
+                    animate={{x: 0}}
+                    transition={{duration: 1}}>What functionalities will you need? How many subpages will there be? (menu, contact, shop, slideshow gallery etc.) (required)</motion.h2>
                     <textarea style={{ width: '100%', height: "200px" }}></textarea>
                 </motion.div>
 
@@ -76,11 +84,14 @@ export function Questions(props) {
             currQuestion = (
                 <motion.div className="question"
                 key="question4"
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0  }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <h2>Inspirations - are there any websites similar to what you would like to achieve? (optional)</h2>
+                    <motion.h2
+                    initial={{x: 10}}
+                    animate={{x: 0}}
+                    transition={{duration: 1}}>Inspirations - are there any websites similar to what you would like to achieve? (optional)</motion.h2>
                     <label>Website(s) with functionalities that you like: </label>
                     <textarea style={{ width: '100%', height: "90px" }}></textarea>
                     <label>Website(s) with graphic design that you like: </label>
@@ -93,11 +104,14 @@ export function Questions(props) {
             currQuestion = (
                 <motion.div className="question"
                 key="question5"
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0  }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <h2>Anything else you would like to share with me to better understand your vision? (optional)</h2>
+                    <motion.h2
+                    initial={{x: 10}}
+                    animate={{x: 0}}
+                    transition={{duration: 1}}>Anything else you would like to share with me to better understand your vision? (optional)</motion.h2>
                     <textarea style={{ width: '100%', height: "200px" }}></textarea>
 
                 </motion.div>
@@ -108,11 +122,14 @@ export function Questions(props) {
                 <div>
                 <motion.div className="question"
                 key="question6"
-                initial={{ opacity: 0, x: 10}}
+                initial={{ opacity: 0}}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <h2>That's all! <br></br>Hit the submit button and I'll get back to you ASAP :)</h2>
+                    <motion.h2
+                    initial={{x: 10}}
+                    animate={{x: 0}}
+                    transition={{duration: 1}}>That's all! <br></br>Hit the submit button and I'll get back to you ASAP :)</motion.h2>
                 </motion.div>
                 <button onClick={props.handleSubmit}>Submit!</button>
 

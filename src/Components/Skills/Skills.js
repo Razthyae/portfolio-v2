@@ -12,6 +12,7 @@ import Emotion from './emotion.png'
 import Framer from './framer.svg'
 import GitHub from './github.svg'
 import Mocha from './mocha.svg'
+import Tailwind from './tailwind.png'
 
 export const Skills = () => {
     return (
@@ -71,6 +72,10 @@ export const Skills = () => {
                     <div id='framer' className="skillsTile">
                         <img src={Framer}></img>
                         <span className="skillsDescription">Framer Motion</span>
+                    </div>
+                    <div id='tailwind' className="skillsTile">
+                        <img src={Tailwind}></img>
+                        <span className="skillsDescription">Tailwind</span>
                     </div>
                 </section>
             </fieldset>
