@@ -9,19 +9,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   flex-direction: column;
 }
-
 
 #contact a {
   color: white;
   text-decoration: none;
-  
 }
 
 .contactWrapper {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 22px;
   letter-spacing: 1px;
   display: flex;
@@ -30,8 +28,6 @@
   height: 120px;
   margin: 10px;
 }
-
-
 
 .phone {
   background-color: #ddd;
@@ -49,24 +45,38 @@
   color: white;
   z-index: 2;
   transition: 1.2s;
-  background: linear-gradient(to right bottom, #4776E6, #8E54E9);
+}
+
+.contact1 {
+  background-color: #b459d8;
+
+}
+
+.contact2 {
+  background-color: #555ac0;
+}
+
+.contact3 {
+  background-color: #24b47e;
+}
+.contact4 {
+  background-color: #ac5183;
 }
 
 .number {
   height: 100px;
   width: 452px;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1529044728228-9917df974897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-image: linear-gradient(rgba(131, 131, 131, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./contact.png);
   background-size: cover;
   color: white;
   box-shadow: 3px 3px 30px #aaa;
   text-align: right;
   padding-left: 68px;
   z-index: 1;
-
-  
 }
 
-.contactWrapper:hover .cta{
+.contactWrapper:hover .cta {
   transform: translateX(-80%);
   transition: 1.2s;
 }

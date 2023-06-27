@@ -50,7 +50,8 @@ export const Projects = () => {
         <div
           key={index}
           className="slider-content"
-          style={{ background: `url('${item.image}') no-repeat center center` }}
+          style={{ background: `url('${item.image}') no-repeat center center`
+        }}
         >
           <div className="inner">
             <h1>{item.title}</h1>
