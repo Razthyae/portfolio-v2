@@ -17,7 +17,15 @@
     width: 80%
 }
 
-#logo img {
+#logophoto {
     width: 32vw;
     border-radius: 20vw;
+}
+
+#logosignature {
+    position:absolute;
+    width: 190px; 
+    top: 20vw;
+    transform: rotate(-12deg) translateX(30px)
+
 }

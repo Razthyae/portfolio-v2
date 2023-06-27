@@ -46,6 +46,7 @@
 }
 body {
 background: radial-gradient(circle at 50% 0%, #f6f9fc 15%, #f6f9fc 75%);
+overflow-x: hidden;
 }
 
 #background {

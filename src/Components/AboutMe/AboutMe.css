@@ -41,7 +41,7 @@
 
 #aboutme {
   position: absolute;
-  width: 99vw;
+  width: 100vw;
   top: 0px;
   box-sizing: border-box;
   z-index: 2;
@@ -305,9 +305,10 @@
   border-radius: 150px;
 }
 
-.scrollarrows {
+.scrollarrowscontainer {
   position: relative;
-  height: 12vh;
+  top: -20px;
+  height: 7vh;
   left: calc((100% - 200px) / 2);
   width: 200px;
   display: flex;
@@ -318,18 +319,7 @@
 
 
 .scrollarrows img {
-  scale: 0.3;
-  animation-name: animateScrollArrows;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  scale: 0.4;
 }
 
 
-@keyframes animateScrollArrows {
-  from {
-    top: 0;
-  }
-  to {
-    top: 3px;
-  }
-}
