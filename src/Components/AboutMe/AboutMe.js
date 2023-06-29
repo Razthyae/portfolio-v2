@@ -96,7 +96,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
           <div class="timeline__event__icon">
             <img src={Musician}></img>
           </div>
@@ -117,7 +117,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div class="timeline__event animated fadeInUp timeline__event--type1">
+        <div class="timeline__event animated fadeInUp timeline__event--type2">
           <div class="timeline__event__icon">
             <img src={Editor} />
           </div>
@@ -184,7 +184,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
           <div class="timeline__event__icon">
             <img src={Singer}></img>
           </div>
