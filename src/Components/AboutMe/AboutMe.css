@@ -46,9 +46,15 @@
   box-sizing: border-box;
   z-index: 2;
   font-size: 13px;
-  background-image: linear-gradient(90deg, var(--cups-lighter) 20%, white);
+  /* background-image: linear-gradient(90deg, var(--cups-lighter) 20%, white); */
+  background-image: linear-gradient(90deg, #223D58, #0A131B 80%);
+
   font-family: "Open Sans", sans-serif;
-  color: var(--teal)
+  /* color: var(--teal) */
+  color: white;
+ 
+
+
 }
 
 .timeline {
@@ -107,15 +113,15 @@
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--teal);
+  color: var(--teal) !important;
   letter-spacing: 1.5px;
 }
 .timeline__event__content {
   padding: 20px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  background: white;
-  border: 1px solid black;
+  background: var(--cups);
+  border: 1px solid var(--golden);
   width: 550px;
   border-radius: 0 6px 6px 0;
   height: 135px;
@@ -123,17 +129,20 @@
   font-size: 14.3px;
 }
 .timeline__event__date {
-  color: var(--teal-lighter);
+  text-shadow: 0px 0px 10px black;
+
   font-size: 30px;
   font-weight: 600;
-  background: linear-gradient(45deg, var(--teal), var(--teal-lighter));
+  background: var(--cups);
+  border: 1px solid var(--golden);
+  
   display: flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
   padding: 0 20px;
   border-radius: 6px 0 0 6px;
-  height: 177px;
+  height: 175px;
   margin-top: 55px;
   width: 150px;
   
@@ -186,12 +195,14 @@
 }
 .timeline__event__description {
   flex-basis: 100%;
+  color: black;
+  text-shadow: none;
 }
 .timeline__event--type2:after {
   background: linear-gradient(45deg, var(--golden), var(--golden-lighter));
 }
 .timeline__event--type2 .timeline__event__date {
-  color: var(--golden-lighter);
+color: white;
   background: linear-gradient(45deg, var(--golden), var(--golden-lighter));
 }
 .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before,
@@ -204,7 +215,7 @@
 }
 .timeline__event--type2 .timeline__event__icon:before,
 .timeline__event--type2 .timeline__event__icon:after {
-  background: linear-gradient(45deg, var(--golden), var(--golden-lighter));
+  background: linear-gradient(45deg, var(--golden-lighter), var(--golden-lighter));
 }
 .timeline__event--type2 .timeline__event__title {
   color: linear-gradient(45deg, var(--golden), var(--golden-lighter));
