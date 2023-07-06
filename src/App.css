@@ -3,6 +3,12 @@
 --color-2: #2e806b;
 --color-3: #F7B733;
 --color-4: #ffffff;;
+--teal: #0A131B;
+--teal-lighter: #223D58;
+--golden: #33281C;
+--golden-lighter: #8f7c67;
+--cups: #DCC4AA;
+--cups-lighter: #E2D2C2;
 }
 
 
@@ -45,7 +51,8 @@
   }
 }
 body {
-background: radial-gradient(circle at 50% 0%, #f6f9fc 15%, #f6f9fc 75%);
+  background-image: linear-gradient(90deg, #223D58, #0A131B 80%);
+
 overflow-x: hidden;
 }
 
@@ -59,7 +66,7 @@ overflow-x: hidden;
   width: 35vw;
   height: 35vw;
   border-radius: 50%;
-  border: 20px solid #6c1fb4;
+  border: 15px solid #33281C;
   transition-property: width height;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;

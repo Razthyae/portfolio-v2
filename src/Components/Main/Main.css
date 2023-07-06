@@ -6,7 +6,7 @@
     top: 60%;
     width: 100%;
     transform: translate(0, -50%);
-
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -14,12 +14,12 @@
 }
 
 .navButtons {
-    background-color: #04192e;
-    height: 110px;
+    background-color: #DCC4AA;
+    height: 100px;
     margin-top: 25px;
     margin-bottom: 25px;
     z-index: -1;
-    border: 2px solid transparent;
+    border: 3px solid #33281C;
     display: flex;
     align-items: center;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -29,15 +29,20 @@
 
 .navButtons:hover {
     
-    box-shadow: 0px 0px 25px 5px goldenrod;
+    box-shadow: 0px 0px 15px 3px goldenrod;
 
 }
 
 .navButtons a {
-    color: var(--color-4);
+    color: black;
     font-size: 34px;
+  
     text-decoration: none;
     width: 15vw;
+}
+
+.navButtons:hover a {
+    color: white;
 }
 
 .left {
@@ -65,7 +70,8 @@ opacity: 1;
     justify-content: center;
     text-align: center;
     height: 20vh;
-
+    background-color: transparent;
+    color: white;
 }
 
 .mainHeader hr{

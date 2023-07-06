@@ -8,6 +8,7 @@ import Tennis from "./Tennis.jpg";
 import Gamer from "./Gamer.jpg";
 import Singer from "./Singer.jpg";
 import Scroll from "./scroll.png";
+import ScrollWhite from './scrollwhite.png'
 import { easeInOut, motion } from "framer-motion";
 
 export const AboutMe = () => {
@@ -43,9 +44,9 @@ export const AboutMe = () => {
 
           }}
           >
-            <img className="scrollarrow" src={Scroll} />
-            <img ClassName="scrollarrow" src={Scroll} />
-            <img ClassName="scrollarrow" src={Scroll} />
+            <img className="scrollarrow" src={ScrollWhite} />
+            <img ClassName="scrollarrow" src={ScrollWhite} />
+            <img ClassName="scrollarrow" src={ScrollWhite} />
           </motion.div>
         </div>
       </section>
@@ -54,7 +55,7 @@ export const AboutMe = () => {
       <h2 id="worktitle">Work</h2>
 
       <div class="timeline">
-        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
           <div class="timeline__event__icon ">
             <img src={DJ} />
           </div>
@@ -96,7 +97,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
           <div class="timeline__event__icon">
             <img src={Musician}></img>
           </div>
@@ -117,7 +118,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div class="timeline__event animated fadeInUp timeline__event--type1">
+        <div class="timeline__event animated fadeInUp timeline__event--type2">
           <div class="timeline__event__icon">
             <img src={Editor} />
           </div>
@@ -140,7 +141,7 @@ export const AboutMe = () => {
       <h2 id="hobbytitle">Hobby</h2>
 
       <div class="timeline">
-        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
           <div class="timeline__event__icon ">
             <img src={Tennis} />
           </div>
@@ -184,7 +185,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+        <div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
           <div class="timeline__event__icon">
             <img src={Singer}></img>
           </div>

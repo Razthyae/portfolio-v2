@@ -29,11 +29,7 @@ const navButton = {
 
 export const Main = () => {
 
-    const backgroundTransform = () => {
-    let background = document.getElementById("background")
-    background.style.width = "150vw"
-    background.style.height = "150vw"    
-    }
+   
 
     
 
@@ -42,23 +38,28 @@ export const Main = () => {
         transition={{duration: 3}}
         exit={{opacity: 0}}
         >
-            <div className='mainHeader'>
+            <motion.div className='mainHeader'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}
+            >
             <h1>Front-End Developer</h1>
             <hr />
             <h2>Akash Kumar</h2>
-            </div>
+            </motion.div>
             <motion.div className="navContainer"
  initial="hidden"
  animate="visible"
  variants={navContainer}
             
             >
-                <motion.div className="navButtons left" variants={navButton}  transition="transition" exit={{opacity: 0}} ><Link to='/aboutme' onClick={backgroundTransform}>About Me</Link></motion.div>
-                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}} ><Link to='/skills' onClick={backgroundTransform}>Skills</Link></motion.div>
-                <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/projects/' onClick={backgroundTransform}>Projects</Link></motion.div>
-                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/pricing' onClick={backgroundTransform}>Pricing</Link></motion.div>
-                <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/contact' onClick={backgroundTransform}>Contact</Link></motion.div>
-                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' to='/secret' onClick={backgroundTransform}>Secret</Link></motion.div>
+                <motion.div className="navButtons left" variants={navButton}  transition="transition" exit={{opacity: 0}} ><Link to='/aboutme' >About Me</Link></motion.div>
+                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}} ><Link to='/skills' >Skills</Link></motion.div>
+                <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/projects/' >Projects</Link></motion.div>
+                <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/pricing' >Pricing</Link></motion.div>
+                <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/contact' >Contact</Link></motion.div>
+                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' to='/secret' >Secret</Link></motion.div>
             </motion.div>
         </motion.section>
     )
