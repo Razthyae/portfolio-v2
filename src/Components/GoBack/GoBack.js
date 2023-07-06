@@ -20,7 +20,7 @@ export function GoBack() {
 
        const handleClick = () => {
         backgroundTransform()
-        navigate(-1)
+        navigate('/')
        } 
   
     return (
