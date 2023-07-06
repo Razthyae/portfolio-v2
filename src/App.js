@@ -9,11 +9,34 @@ import { Logo } from './Components/Logo/Logo'
 import { GoBack } from './Components/GoBack/GoBack';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-
+import { useEffect } from 'react';
 
 
 function App() {
   const location = useLocation()
+
+  const handleNavigation = () => {
+   
+    
+    const backgroundBigger = () => {
+   
+      let background = document.getElementById("background")
+      background.style.width = "150vw"
+      background.style.height = "150vw"    
+      }
+
+      const backgroundSmaller = () => {
+      
+        let background = document.getElementById("background")
+        background.style.width = "35vw"
+        background.style.height = "35vw"    
+        }
+
+
+    location.pathname !== '/' ? backgroundBigger() : backgroundSmaller()
+  }
+
+  useEffect(handleNavigation, [location.pathname])
 
   return (
 
