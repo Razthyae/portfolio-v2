@@ -70,7 +70,7 @@ export const Main = () => {
                 <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/projects/' >Projects</Link></motion.div>
                 <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/pricing' >Pricing</Link></motion.div>
                 <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/contact' >Contact</Link></motion.div>
-                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' to='/secret' onClick={handleSecret}>Secret</Link></motion.div>
+                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' className='navLink' to='/secret' onClick={handleSecret}>Secret</Link></motion.div>
             </motion.div>
         </motion.section>
     )
