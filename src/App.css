@@ -57,7 +57,9 @@ overflow-x: hidden;
 }
 
 #background {
-  background-color: white;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(-130deg, white, var(--golden) 30%, var(--golden) 70%, rgb(172, 129, 22), white 92%) border-box;
+  border: 15px solid transparent;
   position: fixed;
   top: 60%;
   left: 50%;
@@ -66,7 +68,8 @@ overflow-x: hidden;
   width: 35vw;
   height: 35vw;
   border-radius: 50%;
-  border: 15px solid #33281C;
+ 
+  
   transition-property: width height;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
