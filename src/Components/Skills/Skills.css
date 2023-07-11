@@ -2,7 +2,7 @@
     position: absolute;
     text-align: center;
     z-index: 2;
-    
+    background-image: linear-gradient(90deg, #223D58, #0A131B 80%);
     top: 0px;
     width: 100vw;
 }
@@ -16,6 +16,7 @@
     width: 50vw;
     align-items: center;
     justify-content: center;
+  
 }
 
 #languages>div,
@@ -61,14 +62,15 @@
 #skills fieldset {
     margin: 0 auto;
     width: 50vw;
-    
-    border-radius: 25px;
-    border: transparent;
+    background-color: var(--cups-lighter);
+ 
+    border: 6px ridge rgb(172, 129, 22);
     margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 55px;
+    margin-bottom: 50px;
+    padding: 60px 10px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    transition: background-color 0.5s;
+    transition: box-shadow 0.2s;
+    
 }
 
 #skills legend {
@@ -82,6 +84,7 @@
 #skills hr {
     width: 70%;
     margin: 30px auto;
+    
 }
 
 #skills h2 {
@@ -96,10 +99,14 @@
 
 
 fieldset:hover {
-    background-color: rgba(21, 241, 5, 0.116)
+    box-shadow: 0px 0px 30px 0px goldenrod !important;
 }
+
+
+
 
 #skills h1 {
     font-size: 70px;
     margin: 70px 0;
+    color: white;
 }

@@ -15,27 +15,27 @@ export const Contact = () => {
 
 
             <div className='contactWrapper'>
-                <div className="phone cta contact1">Call me</div>
+                <div className="phone cta ">Call me</div>
                 <div className="phone number">+48 796 453 528</div>
             </div>
 
             <a href='https://m.me/ZealDJ'>
                 <div className='contactWrapper'>
-                    <div className="phone cta contact2">Messenger</div>
+                    <div className="phone cta ">Messenger</div>
                     <div className="phone number"> Click me!</div>
                 </div>
             </a>
 
             <a href='mailto:a_kumar@poczta.fm'>
                 <div className='contactWrapper'>
-                    <div className="phone cta contact3">Mail</div>
+                    <div className="phone cta ">Mail</div>
                     <div className="phone number">a_kumar@poczta.fm</div>
                 </div>
             </a>
 
             <a href='https://razthyae.github.io/'>
                 <div className='contactWrapper'>
-                    <div className="phone cta contact4">GitHub</div>
+                    <div className="phone cta ">GitHub</div>
                     <div className="phone number">https://razthyae.github.io/</div>
                 </div>
             </a>

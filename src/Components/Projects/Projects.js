@@ -44,6 +44,7 @@ export const Projects = () => {
         transition={{ duration: 0.5, delay: 1 }}
         exit={{opacity: 0, transition: {duration: 0.5}}}
         >
+          <div id='projectsContainer'>
            <h1 id='projectsHeader'>PROJECTS</h1>
             <Slider className="slider-wrapper">
       {content.map((item, index) => (
@@ -69,7 +70,7 @@ export const Projects = () => {
         </div>
       ))}
     </Slider>
-    
+    </div>
         </motion.section>
     )
 }

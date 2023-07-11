@@ -29,7 +29,7 @@ export const Skills = () => {
 
             <fieldset>
                 
-                <h2>LANGUAGES</h2>
+                <h2 className="skillsCategory">LANGUAGES</h2>
                 <hr></hr>
                 <section id='languages'>
                     <div id='html' className="skillsTile">
@@ -54,7 +54,7 @@ export const Skills = () => {
          
 
             <fieldset>
-            <h2>LIBRARIES</h2>
+            <h2 className="skillsCategory">LIBRARIES</h2>
                 <hr></hr>
                 <section id='libraries'>
                     <div id='react' className="skillsTile">
@@ -82,7 +82,7 @@ export const Skills = () => {
 
            
             <fieldset>
-            <h2>VERSION CONTROL</h2>
+            <h2 className="skillsCategory">VERSION CONTROL</h2>
                 <hr></hr>
                 <section id='versioncontrol'>
                     <div id='git' className="skillsTile">
@@ -100,7 +100,7 @@ export const Skills = () => {
          
 
             <fieldset>
-            <h2>TESTING</h2>
+            <h2 className="skillsCategory">TESTING</h2>
                 <hr></hr>
                 <section id='testing'>
                     <div id='mocha' className="skillsTile">

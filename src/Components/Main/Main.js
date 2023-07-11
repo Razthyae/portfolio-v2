@@ -2,6 +2,7 @@ import React from "react";
 import './Main.css'
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Swal from 'sweetalert2'
 
 const navContainer = {
     visible: {
@@ -25,6 +26,16 @@ const navButton = {
     visible: { opacity: 1},
     hidden: { opacity: 0},
     transition: { delay: 3}
+}
+
+const handleSecret = (event) => {
+  event.preventDefault()
+  Swal.fire({
+    title: 'Secret...',
+    text: '...is not available yet, do come back later! :) ',
+    icon: 'question',
+    confirmButtonText: `I'll be back`
+  })
 }
 
 export const Main = () => {
@@ -59,7 +70,7 @@ export const Main = () => {
                 <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/projects/' >Projects</Link></motion.div>
                 <motion.div className="navButtons right" variants={navButton} exit={{opacity: 0}}><Link to='/pricing' >Pricing</Link></motion.div>
                 <motion.div className="navButtons left" variants={navButton} exit={{opacity: 0}}><Link to='/contact' >Contact</Link></motion.div>
-                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' to='/secret' >Secret</Link></motion.div>
+                <motion.div className="navButtons right" id='secret' variants={navButton} exit={{opacity: 0}}><Link id='secrettext' className='navLink' to='/secret' onClick={handleSecret}>Secret</Link></motion.div>
             </motion.div>
         </motion.section>
     )
