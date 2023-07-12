@@ -8,10 +8,13 @@ import Tennis from "./Tennis.jpg";
 import Gamer from "./Gamer.jpg";
 import Singer from "./Singer.jpg";
 import Scroll from "./scroll.png";
-import ScrollWhite from './scrollwhite.png'
+import ScrollWhite from "./scrollwhite.png";
 import { easeInOut, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       id="aboutme"
@@ -22,27 +25,20 @@ export const AboutMe = () => {
       exit={{ opacity: 0, transition: { duration: 0.5 } }}
     >
       <section id="aboutintro">
-        <h1>Hi!</h1>
-        <h3>
-          {" "}
-          I'm Akash Kumar and I'm a 34-years-old Front-End Developer and artist
-          based in Wrocław, Poland.{" "}
-        </h3>
-        <p className="introp">
-          For technical info visit "Skills" and "Projects" sections. Here you
-          can get to know about my non-programming side.
-        </p>
-        <p className="introp">Scroll down!</p>
+        <h1>{t("about-hi")}</h1>
+        <h3>{t("about-akash")}</h3>
+        <p className="introp">{t("about-technical")}</p>
+        <p className="introp">{t("about-scroll")}</p>
 
         <div className="scrollarrowscontainer">
-          <motion.div className="scrollarrows"
-          animate = {{y: [0, 15, 0]}}
-          transition={{
-            duration: 0.8,
-            repeat: Infinity,
-            ease: easeInOut
-
-          }}
+          <motion.div
+            className="scrollarrows"
+            animate={{ y: [0, 15, 0] }}
+            transition={{
+              duration: 0.8,
+              repeat: Infinity,
+              ease: easeInOut,
+            }}
           >
             <img className="scrollarrow" src={ScrollWhite} />
             <img ClassName="scrollarrow" src={ScrollWhite} />
@@ -52,27 +48,23 @@ export const AboutMe = () => {
       </section>
       <hr id="aboutmehr"></hr>
 
-      <h2 id="worktitle">Work</h2>
+      <h2 id="worktitle">{t("about-work")}</h2>
 
       <div class="timeline">
         <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
           <div class="timeline__event__icon ">
             <img src={DJ} />
           </div>
-          <div class="timeline__event__date">DJ</div>
+          <div class="timeline__event__date">{t("about-dj")}</div>
           <div class="timeline__event__content ">
             <div class="timeline__event__title">
-              DJ Zeal <hr />
+              {t("about-dj-description")} <hr />
             </div>
             <div class="timeline__event__description">
               <p>
-                As DJ Zeal I've been DJing at many dance festivals in Poland and
-                abroad (Czech Republic, Ukraine, Germany, Austria, Malta,
-                Belarus, Netherlands), entertaining dancers with my selection of
-                zouk, bachata, kizomba and salsa.
+                {t("about-dj-full-1")}
                 <br />
-                I'm also creator of Sensualove Events that took place in years
-                2016-2018.
+                {t("about-dj-full-2")}
               </p>
             </div>
           </div>
@@ -82,17 +74,13 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Dancer}></img>
           </div>
-          <div class="timeline__event__date">Dancer </div>
+          <div class="timeline__event__date">{t("about-dancer")} </div>
           <div class="timeline__event__content">
             <div class="timeline__event__title">
-              Zouk, bachata, salsa, kizomba <hr />
+              {t("about-dancer-description")} <hr />
             </div>
             <div class="timeline__event__description">
-              <p>
-                Professional dancer with > 10 years of experience. Teaching at
-                the biggest festivals, performing shows, leading successful
-                choreography group - been there, done that! :)
-              </p>
+              <p>{t("about-dancer-full-1")}</p>
             </div>
           </div>
         </div>
@@ -101,18 +89,16 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Musician}></img>
           </div>
-          <div class="timeline__event__date">Musician</div>
+          <div class="timeline__event__date">{t("about-musician")}</div>
           <div class="timeline__event__content">
             <div class="timeline__event__title">
-              Tuba, electric guitar, bass guitar <hr />{" "}
+              {t("about-musician-description")} <hr />{" "}
             </div>
             <div class="timeline__event__description">
               <p>
-                As Academy of Music graduate, tuba, guitar, bass guitar player I
-                played in all kind of musical bands - along with working
-                full-time in Representative Band of Land Forces in Wrocław.
-                <br></br>I created onearmymanpl YT channel - give it a listen!
-                :)
+                {t("about-musician-full-1")}
+                <br></br>
+                {t("about-musician-full-2")}
               </p>
             </div>
           </div>
@@ -122,23 +108,21 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Editor} />
           </div>
-          <div class="timeline__event__date">Editor</div>
+          <div class="timeline__event__date">{t('about-editor')}</div>
           <div class="timeline__event__content">
             <div class="timeline__event__title">
-              Video Editing <hr />
+            {t('about-editor-description')} <hr />
             </div>
             <div class="timeline__event__description">
               <p>
-                I have edited videos for my dance projects, for music projects
-                (including music video for "GMO" group) and for the needs of
-                Representative Band of Land Forces.
+              {t('about-editor-full')}
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <h2 id="hobbytitle">Hobby</h2>
+      <h2 id="hobbytitle">{t('about-hobby')}</h2>
 
       <div class="timeline">
         <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
@@ -146,18 +130,16 @@ export const AboutMe = () => {
             <img src={Tennis} />
           </div>
           <div class="timeline__event__date">
-            Tennis <br></br>
-            player
+          {t('about-tennis-1')} <br></br>
+          {t('about-tennis-2')}
           </div>
           <div class="timeline__event__content ">
             <div class="timeline__event__title">
-              NTRP ~ 2.5 <hr />
+            {t('about-tennis-description')} <hr />
             </div>
             <div class="timeline__event__description">
               <p>
-                Up for the challenge! I've been playing for 1,5 years, slowly
-                building my confidence arount the tennis court. Looking forward
-                to meeting new opponents with same level.
+              {t('about-tennis-full')}
               </p>
             </div>
           </div>
@@ -167,19 +149,17 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Gamer}></img>
           </div>
-          <div class="timeline__event__date">Gamer </div>
+          <div class="timeline__event__date">{t('about-gamer')} </div>
           <div class="timeline__event__content">
             <div class="timeline__event__title">
-              Board games, video games, VR <hr />
+            {t('about-gamer-description')} <hr />
             </div>
             <div class="timeline__event__description">
               <p>
-                I love to play games! <br />
-                I own PC, Playstation 4, Oculus Quest 2 - there are many video
-                game genres I enjoy, but Soulslikes are certainly top amongst
-                them :) <br />
-                As for board games..? Yes - please! <br />
-                PS Does escape rooms count for a games..?
+              {t('about-gamer-full-1')} <br />
+              {t('about-gamer-full-2')} <br />
+              {t('about-gamer-full-3')} <br />
+              {t('about-gamer-full-4')}
               </p>
             </div>
           </div>
@@ -189,16 +169,16 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Singer}></img>
           </div>
-          <div class="timeline__event__date">Singer</div>
+          <div class="timeline__event__date">              {t('about-singer')}
+</div>
           <div class="timeline__event__content">
             <div class="timeline__event__title">
-              (Amateur) <hr />{" "}
+            {t('about-singer-description')}
+ <hr />{" "}
             </div>
             <div class="timeline__event__description">
               <p>
-                Opposite to my instrument playing skills - singing is just an
-                innocent amatuer hobby. Took part in some workshops, took some
-                private lessons - open for karaoke-night-out propositions :)
+              {t('about-singer-full')}
               </p>
             </div>
           </div>

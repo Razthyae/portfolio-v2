@@ -20,7 +20,8 @@ export function GoBack() {
 
        const handleClick = () => {
         backgroundTransform()
-        navigate('/')
+        const languageQuery = location.search
+        navigate('/' + languageQuery)
        } 
   
     return (
