@@ -7,9 +7,9 @@ import { Projects } from "./Components/Projects/Projects";
 import { Skills } from "./Components/Skills/Skills";
 import { Logo } from "./Components/Logo/Logo";
 import { GoBack } from "./Components/GoBack/GoBack";
-import { Language } from "./Components/Language/Language";
 
-import { Test } from "./Components/Test/Test";
+
+import { Language } from "./Components/Language/Language";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -63,16 +63,11 @@ function App() {
     location.pathname !== "/" ? backgroundBigger() : backgroundSmaller();
   };
 
-  const languageNav = 
-      <Language
-                  lang={lang}
-                  setLang={setLang}
-                  languageChange={languageChange}
-                />
+  
  
 
-  const test = 
-  <Test 
+  const language = 
+  <Language 
   lang={lang}
   setLang={setLang}
   languageChange={languageChange}
@@ -91,15 +86,15 @@ function App() {
       <AnimatePresence mode="sync">
         <Routes key={location.pathname} location={location}>
          
-            <Route path="/aboutme" element={<><AboutMe />{test}</>} />
+            <Route path="/aboutme" element={<><AboutMe />{language}</>} />
 
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<><Contact />{language}</>} />
 
-            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/pricing" element={<><Pricing />{language}</>} />
 
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<><Projects />{language}</>} />
 
-            <Route path="/skills" element={<Skills />} />
+            <Route path="/skills" element={<><Skills />{language}</>} />
           
 
           <Route
@@ -108,7 +103,7 @@ function App() {
               <div>
                 <Main />
                 <Logo />
-                {test}
+                {language}
               </div>
             }
           />

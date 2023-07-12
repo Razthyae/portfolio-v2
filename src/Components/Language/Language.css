@@ -15,11 +15,11 @@
 
 }
 
-#language img {
+#test img {
     height: 18px;
 }
 
-#language button {
+#test button {
     color: white;
     background: transparent;
     border: none;
@@ -28,7 +28,7 @@
     margin: 0;
 }
 
-#language button:hover {
+#test button:hover {
     color: goldenrod
 }
 
