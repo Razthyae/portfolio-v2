@@ -38,23 +38,29 @@ export function Questions(props) {
           >
             {t("pricing-contact")}
           </motion.h2>
-          <label>{t("pricing-name")} </label>
           <input
+            class="question-1-input"
             type="text"
             value={props.username}
             onChange={handleUsernameChange}
+            placeholder={t("pricing-name")}
+            id="user-name"
           ></input>
-          <label>{t("pricing-email")} </label>
           <input
+            class="question-1-input"
             type="email"
             value={props.email}
             onChange={handleEmailChange}
+            placeholder={t("pricing-email")}
+            id="user-email"
           ></input>
-          <label>{t("pricing-phone")}</label>
           <input
+            class="question-1-input"
             type="tel"
             value={props.phone}
             onChange={handlePhoneChange}
+            placeholder={t("pricing-phone")}
+            id="user-phone"
           ></input>
         </motion.div>
       );
@@ -82,9 +88,10 @@ export function Questions(props) {
             {t("pricing-2-1")}
             <br></br> {t("pricing-2-2")}
           </motion.h2>
-          <textarea style={{ width: "100%", height: "200px" }}
-          value={props.question2}
-          onChange={handleQuestion2Change}
+          <textarea
+            id="textarea1"
+            value={props.question2}
+            onChange={handleQuestion2Change}
           ></textarea>
         </motion.div>
       );
@@ -111,9 +118,10 @@ export function Questions(props) {
           >
             {t("pricing-3")}
           </motion.h2>
-          <textarea style={{ width: "100%", height: "200px" }}
-          value={props.question3}
-          onChange={handleQuestion3Change}
+          <textarea
+            id="textarea2"
+            value={props.question3}
+            onChange={handleQuestion3Change}
           ></textarea>
         </motion.div>
       );
@@ -144,15 +152,19 @@ export function Questions(props) {
           >
             {t("pricing-4-1")}
           </motion.h2>
-          <label>{t("pricing-4-2")} </label>
-          <textarea style={{ width: "100%", height: "90px" }}
-          value={props.question41}
-          onChange={handleQuestion41Change}
+
+          <textarea
+            placeholder={t("pricing-4-2")}
+            id="textarea3"
+            value={props.question41}
+            onChange={handleQuestion41Change}
           ></textarea>
-          <label>{t("pricing-4-3")} </label>
-          <textarea style={{ width: "100%", height: "90px" }}
-          value={props.question42}
-          onChange={handleQuestion42Change}
+
+          <textarea
+            placeholder={t("pricing-4-3")}
+            id="textarea4"
+            value={props.question42}
+            onChange={handleQuestion42Change}
           ></textarea>
         </motion.div>
       );
@@ -179,9 +191,10 @@ export function Questions(props) {
           >
             {t("pricing-5")}
           </motion.h2>
-          <textarea style={{ width: "100%", height: "200px" }}
-          value={props.question5}
-          onChange={handleQuestion5Change}
+          <textarea
+            id="textarea5"
+            value={props.question5}
+            onChange={handleQuestion5Change}
           ></textarea>
         </motion.div>
       );
@@ -191,6 +204,7 @@ export function Questions(props) {
         <div>
           <motion.div
             className="question"
+            id="question6"
             key="question6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, x: 0 }}
@@ -203,10 +217,11 @@ export function Questions(props) {
               transition={{ duration: 1 }}
             >
               {t("pricing-6-1")} <br></br>
-              {t("pricing-6-2")}
+              {t("pricing-6-2")} <br></br>
+              {t("pricing-6-3")}
             </motion.h2>
           </motion.div>
-          <button onClick={props.handleSubmit}>{t("pricing-6-3")}</button>
+          
         </div>
       );
       break;
@@ -223,10 +238,12 @@ export function Questions(props) {
       </button>
     );
   } else if (props.question === 6) {
-    buttons = (
+    buttons = (<div>
       <button onClick={() => props.setQuestion(props.question - 1)}>
         {t("pricing-previous")}
       </button>
+      <button onClick={props.handleSubmit}>{t("pricing-6-4")}</button>
+      </div>
     );
   } else {
     buttons = (
@@ -243,8 +260,7 @@ export function Questions(props) {
 
   return (
     <div id="questionsContainer">
-      <div id="questionButtons"></div>
-      <div id="question">
+      <div id="questionNumber">
         {t("pricing-question-number")}
         {props.question}
       </div>
