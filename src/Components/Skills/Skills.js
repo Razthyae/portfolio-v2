@@ -13,8 +13,12 @@ import Framer from './framer.svg'
 import GitHub from './github.svg'
 import Mocha from './mocha.svg'
 import Tailwind from './tailwind.png'
+import { useTranslation } from "react-i18next";
 
 export const Skills = () => {
+const {t} = useTranslation()
+
+
     return (
         <motion.section id="skills"
             key="skills"
@@ -25,11 +29,11 @@ export const Skills = () => {
         >
 
 
-<h1>Skills</h1>
+<h1>{t('skills-header')}</h1>
 
             <fieldset>
                 
-                <h2 className="skillsCategory">LANGUAGES</h2>
+                <h2 className="skillsCategory">{t('skills-languages')}</h2>
                 <hr></hr>
                 <section id='languages'>
                     <div id='html' className="skillsTile">
@@ -54,7 +58,7 @@ export const Skills = () => {
          
 
             <fieldset>
-            <h2 className="skillsCategory">LIBRARIES</h2>
+            <h2 className="skillsCategory">{t('skills-libraries')}</h2>
                 <hr></hr>
                 <section id='libraries'>
                     <div id='react' className="skillsTile">
@@ -82,7 +86,7 @@ export const Skills = () => {
 
            
             <fieldset>
-            <h2 className="skillsCategory">VERSION CONTROL</h2>
+            <h2 className="skillsCategory">{t('skills-version')}</h2>
                 <hr></hr>
                 <section id='versioncontrol'>
                     <div id='git' className="skillsTile">
@@ -100,7 +104,7 @@ export const Skills = () => {
          
 
             <fieldset>
-            <h2 className="skillsCategory">TESTING</h2>
+            <h2 className="skillsCategory">{t('skills-testing')}</h2>
                 <hr></hr>
                 <section id='testing'>
                     <div id='mocha' className="skillsTile">

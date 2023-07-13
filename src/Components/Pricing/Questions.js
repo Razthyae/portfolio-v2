@@ -1,178 +1,256 @@
 import React from "react";
-import './Questions.css'
+import "./Questions.css";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 
 export function Questions(props) {
-    let currQuestion
-    console.log(props.question)
-    switch (props.question) {
+  const { t } = useTranslation();
 
-        case 1:
-            const handleUsernameChange = (e) => {
-                props.setUsername(e.target.value)
-            }
+  let currQuestion;
+  console.log(props.question);
+  switch (props.question) {
+    case 1:
+      const handleUsernameChange = (e) => {
+        props.setUsername(e.target.value);
+      };
 
-            const handleEmailChange = (e) => {
-                props.setEmail(e.target.value)
-            }
+      const handleEmailChange = (e) => {
+        props.setEmail(e.target.value);
+      };
 
-            const handlePhoneChange = (e) => {
-                props.setPhone(e.target.value)
-            }
+      const handlePhoneChange = (e) => {
+        props.setPhone(e.target.value);
+      };
 
+      currQuestion = (
+        <motion.div
+          className="question"
+          key="question1"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
+          <motion.h2
+            initial={{ x: 10 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {t("pricing-contact")}
+          </motion.h2>
+          <label>{t("pricing-name")} </label>
+          <input
+            type="text"
+            value={props.username}
+            onChange={handleUsernameChange}
+          ></input>
+          <label>{t("pricing-email")} </label>
+          <input
+            type="email"
+            value={props.email}
+            onChange={handleEmailChange}
+          ></input>
+          <label>{t("pricing-phone")}</label>
+          <input
+            type="tel"
+            value={props.phone}
+            onChange={handlePhoneChange}
+          ></input>
+        </motion.div>
+      );
+      break;
 
-            currQuestion = (
-                <motion.div className="question"
-                key="question1"
-                initial={{ opacity: 0}}
-                animate={{ opacity: 1}}
-                transition={{ duration: 1 }}
-                exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <motion.h2
-                    initial={{x: 10}}
-                    animate={{x: 0}}
-                    transition={{duration: 1}}
-                    >Contact info:</motion.h2>
-                    <label>Name (required) </label>
-                    <input type='text' value={props.username} onChange={handleUsernameChange}></input>
-                    <label>E-mail (required) </label>
-                    <input type='email' value={props.email} onChange={handleEmailChange}></input>
-                    <label>Phone: </label>
-                    <input type='tel' value={props.phone} onChange={handlePhoneChange}></input>
-                </motion.div>
-            )
-            break;
+    case 2:
+      const handleQuestion2Change = (e) => {
+        props.setQuestion2(e.target.value);
+      };
 
-        case 2:
-            currQuestion = (
-                <motion.div className="question"
-                key="question2"
-                initial={{ opacity: 0}}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <motion.h2
-                    initial={{x: 10}}
-                    animate={{x: 0}}
-                    transition={{duration: 1}}
-                    >What is the purpose of your site? (business, personal, blog, portfolio etc.)<br></br> Please describe in details what would you like to achieve and how my project can help you (required)</motion.h2>
-                    <textarea style={{ width: '100%', height: "200px" }}></textarea>
-                </motion.div>
-            )
-            break;
+      currQuestion = (
+        <motion.div
+          className="question"
+          key="question2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
+          <motion.h2
+            initial={{ x: 10 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {t("pricing-2-1")}
+            <br></br> {t("pricing-2-2")}
+          </motion.h2>
+          <textarea style={{ width: "100%", height: "200px" }}
+          value={props.question2}
+          onChange={handleQuestion2Change}
+          ></textarea>
+        </motion.div>
+      );
+      break;
 
-        case 3:
-            currQuestion = (
-                <motion.div className="question"
-                key="question3"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <motion.h2
-                    initial={{x: 10}}
-                    animate={{x: 0}}
-                    transition={{duration: 1}}>What functionalities will you need? How many subpages will there be? (menu, contact, shop, slideshow gallery etc.) (required)</motion.h2>
-                    <textarea style={{ width: '100%', height: "200px" }}></textarea>
-                </motion.div>
+    case 3:
+      const handleQuestion3Change = (e) => {
+        props.setQuestion3(e.target.value);
+      };
 
-            )
-            break;
+      currQuestion = (
+        <motion.div
+          className="question"
+          key="question3"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
+          <motion.h2
+            initial={{ x: 10 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {t("pricing-3")}
+          </motion.h2>
+          <textarea style={{ width: "100%", height: "200px" }}
+          value={props.question3}
+          onChange={handleQuestion3Change}
+          ></textarea>
+        </motion.div>
+      );
+      break;
 
-        case 4:
-            currQuestion = (
-                <motion.div className="question"
-                key="question4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <motion.h2
-                    initial={{x: 10}}
-                    animate={{x: 0}}
-                    transition={{duration: 1}}>Inspirations - are there any websites similar to what you would like to achieve? (optional)</motion.h2>
-                    <label>Website(s) with functionalities that you like: </label>
-                    <textarea style={{ width: '100%', height: "90px" }}></textarea>
-                    <label>Website(s) with graphic design that you like: </label>
-                    <textarea style={{ width: '100%', height: "90px" }}></textarea>
-                </motion.div>
-            )
-            break;
+    case 4:
+      const handleQuestion41Change = (e) => {
+        props.setQuestion41(e.target.value);
+      };
 
-        case 5:
-            currQuestion = (
-                <motion.div className="question"
-                key="question5"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <motion.h2
-                    initial={{x: 10}}
-                    animate={{x: 0}}
-                    transition={{duration: 1}}>Anything else you would like to share with me to better understand your vision? (optional)</motion.h2>
-                    <textarea style={{ width: '100%', height: "200px" }}></textarea>
+      const handleQuestion42Change = (e) => {
+        props.setQuestion42(e.target.value);
+      };
 
-                </motion.div>
-            )
-            break;
-        case 6:
-            currQuestion = (
-                <div>
-                <motion.div className="question"
-                key="question6"
-                initial={{ opacity: 0}}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
-                exit={{ opacity: 0, transition: {duration: 0.5} }}>
-                    <motion.h2
-                    initial={{x: 10}}
-                    animate={{x: 0}}
-                    transition={{duration: 1}}>That's all! <br></br>Hit the submit button and I'll get back to you ASAP :)</motion.h2>
-                </motion.div>
-                <button onClick={props.handleSubmit}>Submit!</button>
+      currQuestion = (
+        <motion.div
+          className="question"
+          key="question4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
+          <motion.h2
+            initial={{ x: 10 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {t("pricing-4-1")}
+          </motion.h2>
+          <label>{t("pricing-4-2")} </label>
+          <textarea style={{ width: "100%", height: "90px" }}
+          value={props.question41}
+          onChange={handleQuestion41Change}
+          ></textarea>
+          <label>{t("pricing-4-3")} </label>
+          <textarea style={{ width: "100%", height: "90px" }}
+          value={props.question42}
+          onChange={handleQuestion42Change}
+          ></textarea>
+        </motion.div>
+      );
+      break;
 
-                </div>
-            )
-            break;
-        default:
-            currQuestion = (
-                <div className="question">Jak jak jak?</div>
-            )
-            break;
+    case 5:
+      const handleQuestion5Change = (e) => {
+        props.setQuestion5(e.target.value);
+      };
 
-    }
-
-
-    let buttons
-    if (props.question === 1) {
-        buttons = (
-            <button onClick={() => props.setQuestion(props.question + 1)}>Next</button>
-        )
-    } else if (props.question === 6) {
-        buttons = (
-            <button onClick={() => props.setQuestion(props.question - 1)}>Previous</button>
-        )
-    } else {
-        buttons = (<div>
-            <button onClick={() => props.setQuestion(props.question - 1)}>Previous</button>
-            <button onClick={() => props.setQuestion(props.question + 1)}>Next</button>
+      currQuestion = (
+        <motion.div
+          className="question"
+          key="question5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
+          <motion.h2
+            initial={{ x: 10 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {t("pricing-5")}
+          </motion.h2>
+          <textarea style={{ width: "100%", height: "200px" }}
+          value={props.question5}
+          onChange={handleQuestion5Change}
+          ></textarea>
+        </motion.div>
+      );
+      break;
+    case 6:
+      currQuestion = (
+        <div>
+          <motion.div
+            className="question"
+            key="question6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}
+          >
+            <motion.h2
+              initial={{ x: 10 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1 }}
+            >
+              {t("pricing-6-1")} <br></br>
+              {t("pricing-6-2")}
+            </motion.h2>
+          </motion.div>
+          <button onClick={props.handleSubmit}>{t("pricing-6-3")}</button>
         </div>
-        )
-    }
+      );
+      break;
+    default:
+      currQuestion = <div className="question">Jak jak jak?</div>;
+      break;
+  }
 
-    return (
-        <div id="questionsContainer">
-            <div id='questionButtons'>
+  let buttons;
+  if (props.question === 1) {
+    buttons = (
+      <button onClick={() => props.setQuestion(props.question + 1)}>
+        {t("pricing-next")}
+      </button>
+    );
+  } else if (props.question === 6) {
+    buttons = (
+      <button onClick={() => props.setQuestion(props.question - 1)}>
+        {t("pricing-previous")}
+      </button>
+    );
+  } else {
+    buttons = (
+      <div>
+        <button onClick={() => props.setQuestion(props.question - 1)}>
+          {t("pricing-previous")}
+        </button>
+        <button onClick={() => props.setQuestion(props.question + 1)}>
+          {t("pricing-next")}
+        </button>
+      </div>
+    );
+  }
 
+  return (
+    <div id="questionsContainer">
+      <div id="questionButtons"></div>
+      <div id="question">
+        {t("pricing-question-number")}
+        {props.question}
+      </div>
 
-            </div>
-            <div id='question'>Question #{props.question}</div>
-
-            {currQuestion}
-            {buttons}
-
-        </div>
-    )
+      {currQuestion}
+      {buttons}
+    </div>
+  );
 }

@@ -114,7 +114,7 @@ export const Main = () => {
             to="/secret"
             onClick={handleSecret}
           >
-            Secret
+            {t("main-nav-secret")}
           </Link>
         </motion.div>
       </motion.div>
