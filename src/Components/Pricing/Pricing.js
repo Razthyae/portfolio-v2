@@ -4,6 +4,10 @@ import { Questions } from "./Questions";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
+import emailjs from '@emailjs/browser'
+
+emailjs.init("NNnmNVIB_iyNBYFBZ")
+
 
 export function Pricing() {
   let [question, setQuestion] = useState(1);
@@ -22,20 +26,48 @@ export function Pricing() {
 
   const handleSubmit = () => {
     if (username === "" || email === "" || question2 === "" || question3 === "") {
-        
+     
       Swal.fire({
         title: t('pricing-error-title'),
         text: t("pricing-required"),
         icon: "error",
         confirmButtonText: t('pricing-close'),
-      });
+      })
+     
+      ;
     } else {
+      document.querySelector('#pricingsubmit').disabled = true
+
+      var templateParams = {
+        username: username,
+        email: email,
+        phone: phone,
+        question2: question2,
+        question3: question3,
+        question41: question41,
+        question42: question42,
+        question5: question5
+    }
+
+    emailjs.send('default_service', "pricing", templateParams).then(() => {
       Swal.fire({
         title: t('pricing-success-title'),
         text: t("pricing-success"),
         icon: "success",
         confirmButtonText: t('pricing-close'),
       });
+      console.log("Mail sent!")
+      document.querySelector('#pricingsubmit').disabled = false
+    }, () => {
+      alert("Error, try again!")
+      console.log("Error")
+      document.querySelector('#pricingsubmit').disabled = false
+    })
+
+
+
+
+      
     }
   };
 

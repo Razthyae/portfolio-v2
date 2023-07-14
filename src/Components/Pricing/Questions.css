@@ -77,6 +77,15 @@
   background-color: goldenrod;
 }
 
+#pricingsubmit:disabled {
+  background-color: gray;
+  cursor: wait;
+}
+#pricingsubmit:disabled:hover {
+  background-color: gray;
+  cursor: wait;
+}
+
 
 #question6 {
     display: flex;
