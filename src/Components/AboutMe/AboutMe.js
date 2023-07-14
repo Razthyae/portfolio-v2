@@ -55,8 +55,8 @@ export const AboutMe = () => {
           <div class="timeline__event__icon ">
             <img src={DJ} />
           </div>
-          <div class="timeline__event__date">{t("about-dj")}</div>
-          <div class="timeline__event__content ">
+          <div class="timeline__event__date timeline-right">{t("about-dj")}</div>
+          <div class="timeline__event__content timeline-left">
             <div class="timeline__event__title">
               {t("about-dj-description")} <hr />
             </div>
@@ -74,8 +74,8 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Dancer}></img>
           </div>
-          <div class="timeline__event__date">{t("about-dancer")} </div>
-          <div class="timeline__event__content">
+          <div class="timeline__event__date timeline-left">{t("about-dancer")} </div>
+          <div class="timeline__event__content timeline-right">
             <div class="timeline__event__title">
               {t("about-dancer-description")} <hr />
             </div>
@@ -89,8 +89,8 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Musician}></img>
           </div>
-          <div class="timeline__event__date">{t("about-musician")}</div>
-          <div class="timeline__event__content">
+          <div class="timeline__event__date timeline-right">{t("about-musician")}</div>
+          <div class="timeline__event__content timeline-left">
             <div class="timeline__event__title">
               {t("about-musician-description")} <hr />{" "}
             </div>
@@ -108,8 +108,8 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Editor} />
           </div>
-          <div class="timeline__event__date">{t('about-editor')}</div>
-          <div class="timeline__event__content">
+          <div class="timeline__event__date timeline-left">{t('about-editor')}</div>
+          <div class="timeline__event__content timeline-right">
             <div class="timeline__event__title">
             {t('about-editor-description')} <hr />
             </div>
@@ -129,11 +129,11 @@ export const AboutMe = () => {
           <div class="timeline__event__icon ">
             <img src={Tennis} />
           </div>
-          <div class="timeline__event__date">
+          <div class="timeline__event__date timeline-right">
           {t('about-tennis-1')} <br></br>
           {t('about-tennis-2')}
           </div>
-          <div class="timeline__event__content ">
+          <div class="timeline__event__content timeline-left">
             <div class="timeline__event__title">
             {t('about-tennis-description')} <hr />
             </div>
@@ -149,8 +149,8 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Gamer}></img>
           </div>
-          <div class="timeline__event__date">{t('about-gamer')} </div>
-          <div class="timeline__event__content">
+          <div class="timeline__event__date timeline-left">{t('about-gamer')} </div>
+          <div class="timeline__event__content timeline-right">
             <div class="timeline__event__title">
             {t('about-gamer-description')} <hr />
             </div>
@@ -169,9 +169,9 @@ export const AboutMe = () => {
           <div class="timeline__event__icon">
             <img src={Singer}></img>
           </div>
-          <div class="timeline__event__date">              {t('about-singer')}
+          <div class="timeline__event__date timeline-right">              {t('about-singer')}
 </div>
-          <div class="timeline__event__content">
+          <div class="timeline__event__content timeline-left">
             <div class="timeline__event__title">
             {t('about-singer-description')}
  <hr />{" "}
