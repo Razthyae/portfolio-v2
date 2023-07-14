@@ -3,11 +3,12 @@ import "./Questions.css";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+
+
 export function Questions(props) {
   const { t } = useTranslation();
 
   let currQuestion;
-  console.log(props.question);
   switch (props.question) {
     case 1:
       const handleUsernameChange = (e) => {
@@ -242,7 +243,7 @@ export function Questions(props) {
       <button onClick={() => props.setQuestion(props.question - 1)}>
         {t("pricing-previous")}
       </button>
-      <button onClick={props.handleSubmit}>{t("pricing-6-4")}</button>
+      <button onClick={props.handleSubmit} id='pricingsubmit'>{t("pricing-6-4")}</button>
       </div>
     );
   } else {
