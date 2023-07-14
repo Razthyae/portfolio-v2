@@ -36,10 +36,10 @@ const {t} = useTranslation()
                 </div>
             </a>
 
-            <a href='https://razthyae.github.io/'>
+            <a href='https://github.com/Razthyae'>
                 <div className='contactWrapper'>
                     <div className="phone cta ">GitHub</div>
-                    <div className="phone number">https://razthyae.github.io/</div>
+                    <div className="phone number">https://github.com/Razthyae</div>
                 </div>
             </a>
 
