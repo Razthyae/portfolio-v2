@@ -47,15 +47,16 @@
   z-index: 2;
   font-size: 13px;
   /* background-image: linear-gradient(90deg, var(--cups-lighter) 20%, white); */
-  background-image: linear-gradient(90deg, #223D58, #0A131B 80%);
+  background-image: linear-gradient(90deg, #223d58, #0a131b 80%);
 
   font-family: "Open Sans", sans-serif;
   /* color: var(--teal) */
   color: white;
- 
-
-
 }
+
+
+
+
 
 .timeline {
   display: flex;
@@ -135,7 +136,7 @@
   font-weight: 600;
   background: var(--cups);
   border: 1px solid var(--golden);
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,7 +146,6 @@
   height: 175px;
   margin-top: 55px;
   width: 150px;
-  
 }
 .timeline__event__icon {
   display: flex;
@@ -202,7 +202,7 @@
   background: linear-gradient(45deg, var(--golden), var(--golden-lighter));
 }
 .timeline__event--type2 .timeline__event__date {
-color: white;
+  color: white;
   background: linear-gradient(45deg, var(--golden), var(--golden-lighter));
 }
 .timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before,
@@ -210,12 +210,16 @@ color: white;
   background: var(--golden-lighter);
 }
 .timeline__event--type2 .timeline__event__icon {
-  background: var(--golden);
+  background-image: linear-gradient(-130deg, white, var(--golden) 30%, var(--golden) 70%, rgb(172, 129, 22), white 92%);
   color: linear-gradient(45deg, var(--golden), var(--golden-lighter));
 }
 .timeline__event--type2 .timeline__event__icon:before,
 .timeline__event--type2 .timeline__event__icon:after {
-  background: linear-gradient(45deg, var(--golden-lighter), var(--golden-lighter));
+  background: linear-gradient(
+    45deg,
+    var(--golden-lighter),
+    var(--golden-lighter)
+  );
 }
 .timeline__event--type2 .timeline__event__title {
   color: linear-gradient(45deg, var(--golden), var(--golden-lighter));
@@ -329,10 +333,17 @@ color: white;
   justify-content: space-around;
 }
 
-
-
 .scrollarrows img {
   scale: 0.4;
 }
 
 
+.timeline-left {
+  border: 5px ridge rgb(172, 129, 22);
+  border-right: none;
+}
+
+.timeline-right {
+  border: 5px ridge rgb(172, 129, 22);
+  border-left: none;
+}
