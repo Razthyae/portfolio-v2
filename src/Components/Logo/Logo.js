@@ -11,7 +11,7 @@ export const Logo = () => {
         animate={{opacity:1}}
         transition={{ duration: 0.5, delay: 1 }}
         exit={{opacity: 0, transition: {duration: 0.5}}}>
-            <img id='logophoto' src={Profile2} alt="My photo"/>
+            <img id='logophoto' src={Profile2} alt="Me"/>
             <img id='logosignature' src={Signature} alt="My signature"/>
         </motion.div>
     )

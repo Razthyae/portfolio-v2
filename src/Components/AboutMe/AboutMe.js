@@ -7,7 +7,6 @@ import Editor from "./Editor.png";
 import Tennis from "./Tennis.jpg";
 import Gamer from "./Gamer.jpg";
 import Singer from "./Singer.jpg";
-import Scroll from "./scroll.png";
 import ScrollWhite from "./scrollwhite.png";
 import { easeInOut, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -53,7 +52,7 @@ export const AboutMe = () => {
       <div class="timeline">
         <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
           <div class="timeline__event__icon ">
-            <img src={DJ} alt="DJ photo"/>
+            <img src={DJ} alt="DJ"/>
           </div>
           <div class="timeline__event__date timeline-right">{t("about-dj")}</div>
           <div class="timeline__event__content timeline-left">
@@ -147,7 +146,7 @@ export const AboutMe = () => {
 
         <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
           <div class="timeline__event__icon">
-            <img src={Gamer} alt="Scythe board game photo"></img>
+            <img src={Gamer} alt="Scythe board game"></img>
           </div>
           <div class="timeline__event__date timeline-left">{t('about-gamer')} </div>
           <div class="timeline__event__content timeline-right">
