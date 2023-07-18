@@ -3,13 +3,10 @@ import { motion } from "framer-motion";
 import './Language.css'
 import Polish from './polish.svg'
 import English from './english.svg'
-
-import { useLocation } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
 
 export const Language = (props) => {
-    const location = useLocation();
     const [searchParams] = useSearchParams();
 
     return (

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import './Logo.css'
-import Profile from './Profile.jpg'
 import Profile2 from './Profile2.png'
 import Signature from './download(2).svg'
 
