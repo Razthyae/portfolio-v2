@@ -40,9 +40,9 @@ export const AboutMe = () => {
               ease: easeInOut,
             }}
           >
-            <img className="scrollarrow" src={ScrollWhite} />
-            <img ClassName="scrollarrow" src={ScrollWhite} />
-            <img ClassName="scrollarrow" src={ScrollWhite} />
+            <img className="scrollarrow" src={ScrollWhite} alt=" "/>
+            <img ClassName="scrollarrow" src={ScrollWhite} alt=" "/>
+            <img ClassName="scrollarrow" src={ScrollWhite} alt=" "/>
           </motion.div>
         </div>
       </section>
@@ -53,7 +53,7 @@ export const AboutMe = () => {
       <div class="timeline">
         <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
           <div class="timeline__event__icon ">
-            <img src={DJ} />
+            <img src={DJ} alt="DJ photo"/>
           </div>
           <div class="timeline__event__date timeline-right">{t("about-dj")}</div>
           <div class="timeline__event__content timeline-left">
@@ -72,7 +72,7 @@ export const AboutMe = () => {
 
         <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
           <div class="timeline__event__icon">
-            <img src={Dancer}></img>
+            <img src={Dancer} alt="Dancing with my dance partner Julia"></img>
           </div>
           <div class="timeline__event__date timeline-left">{t("about-dancer")} </div>
           <div class="timeline__event__content timeline-right">
@@ -87,7 +87,7 @@ export const AboutMe = () => {
 
         <div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
           <div class="timeline__event__icon">
-            <img src={Musician}></img>
+            <img src={Musician} alt="Playing the guitar in the army band"></img>
           </div>
           <div class="timeline__event__date timeline-right">{t("about-musician")}</div>
           <div class="timeline__event__content timeline-left">
@@ -106,7 +106,7 @@ export const AboutMe = () => {
 
         <div class="timeline__event animated fadeInUp timeline__event--type2">
           <div class="timeline__event__icon">
-            <img src={Editor} />
+            <img src={Editor} alt="Screenshot from one of videos edited by me"/>
           </div>
           <div class="timeline__event__date timeline-left">{t('about-editor')}</div>
           <div class="timeline__event__content timeline-right">
@@ -127,7 +127,7 @@ export const AboutMe = () => {
       <div class="timeline">
         <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
           <div class="timeline__event__icon ">
-            <img src={Tennis} />
+            <img src={Tennis} alt="Tennis court"/>
           </div>
           <div class="timeline__event__date timeline-right">
           {t('about-tennis-1')} <br></br>
@@ -147,7 +147,7 @@ export const AboutMe = () => {
 
         <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
           <div class="timeline__event__icon">
-            <img src={Gamer}></img>
+            <img src={Gamer} alt="Scythe board game photo"></img>
           </div>
           <div class="timeline__event__date timeline-left">{t('about-gamer')} </div>
           <div class="timeline__event__content timeline-right">
@@ -167,7 +167,7 @@ export const AboutMe = () => {
 
         <div class="timeline__event animated fadeInUp delay-1s timeline__event--type2">
           <div class="timeline__event__icon">
-            <img src={Singer}></img>
+            <img src={Singer} alt="Microphone"></img>
           </div>
           <div class="timeline__event__date timeline-right">              {t('about-singer')}
 </div>

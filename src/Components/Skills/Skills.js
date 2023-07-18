@@ -37,19 +37,19 @@ const {t} = useTranslation()
                 <hr></hr>
                 <section id='languages'>
                     <div id='html' className="skillsTile">
-                        <img src={Html}></img>
+                        <img src={Html} alt="HTML icon"></img>
                         <span className="skillsDescription">HTML</span>
                     </div>
                     <div id='css' className="skillsTile">
-                        <img src={Css}></img>
+                        <img src={Css} alt="CSS icon"></img>
                         <span className="skillsDescription">CSS</span>
                     </div>
                     <div id='javascript' className="skillsTile">
-                        <img src={JavaScript}></img>
+                        <img src={JavaScript} alt="JavaScript icon"></img>
                         <span className="skillsDescription">Java<br></br>Script</span>
                     </div>
                     <div id='typescript' className="skillsTile">
-                        <img src={TypeScript}></img>
+                        <img src={TypeScript} alt="TypeScript icon"></img>
                         <span className="skillsDescription">Type<br></br>Script</span>
                     </div>
                 </section>
@@ -62,23 +62,23 @@ const {t} = useTranslation()
                 <hr></hr>
                 <section id='libraries'>
                     <div id='react' className="skillsTile">
-                        <img src={ReactImg}></img>
+                        <img src={ReactImg} alt="React icon"></img>
                         <span className="skillsDescription">React</span>
                     </div>
                     <div id='redux' className="skillsTile">
-                        <img src={Redux}></img>
+                        <img src={Redux} alt="Redux icon"></img>
                         <span className="skillsDescription">React <br></br>/Redux</span>
                     </div>
                     <div id='emotion' className="skillsTile">
-                        <img src={Emotion}></img>
+                        <img src={Emotion} alt="Emotion React icon"></img>
                         <span className="skillsDescription">Emotion React</span>
                     </div>
                     <div id='framer' className="skillsTile">
-                        <img src={Framer}></img>
+                        <img src={Framer} alt="Framer Motion icon"></img>
                         <span className="skillsDescription">Framer Motion</span>
                     </div>
                     <div id='tailwind' className="skillsTile">
-                        <img src={Tailwind}></img>
+                        <img src={Tailwind} alt="Tailwind icon"></img>
                         <span className="skillsDescription">Tailwind</span>
                     </div>
                 </section>
@@ -90,11 +90,11 @@ const {t} = useTranslation()
                 <hr></hr>
                 <section id='versioncontrol'>
                     <div id='git' className="skillsTile">
-                        <img src={Git}></img>
+                        <img src={Git} alt="Git icon"></img>
                         <span className="skillsDescription">Git</span>
                     </div>
                     <div id='github' className="skillsTile">
-                        <img src={GitHub}></img>
+                        <img src={GitHub} alt="GitHub icon"></img>
                         <span className="skillsDescription">GitHub</span>
                     </div>
                 </section>
@@ -108,7 +108,7 @@ const {t} = useTranslation()
                 <hr></hr>
                 <section id='testing'>
                     <div id='mocha' className="skillsTile">
-                        <img src={Mocha}></img>
+                        <img src={Mocha} alt="Mocha icon"></img>
                         <span className="skillsDescription">Mocha</span>
                     </div>
                 </section>

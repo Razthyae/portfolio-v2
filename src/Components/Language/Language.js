@@ -23,7 +23,7 @@ export const Language = (props) => {
         >
  {searchParams.get("lng") === "en" && (
         <div id="languagebutton">
-          <img src={Polish} />
+          <img src={Polish} alt="Polish flag"/>
           <button onClick={props.languageChange} value="pl">
             Polska wersja
           </button>
@@ -32,7 +32,7 @@ export const Language = (props) => {
 
       {searchParams.get("lng") === "pl" && (
         <div id="languagebutton">
-                    <img src={English} />
+                    <img src={English} alt="English flag"/>
 
           <button onClick={props.languageChange} value="en">English version</button>
         </div>

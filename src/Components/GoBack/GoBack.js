@@ -33,7 +33,7 @@ export function GoBack() {
        
       <button onClick={handleClick} id='backButton'>
         
-        <img src={arrow} style={{color: 'red'}}></img>
+        <img src={arrow} style={{color: 'red'}} alt='navigation - go back'></img>
       </button>
       
   
