@@ -11,9 +11,14 @@
 --cups-lighter: #E2D2C2;
 }
 
+* {
+  font-family: 'Inter' !important;
+}
+
 
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -52,7 +57,7 @@
 }
 body {
   background-image: linear-gradient(90deg, #223D58, #0A131B 80%);
-
+  
 overflow-x: hidden;
 }
 
