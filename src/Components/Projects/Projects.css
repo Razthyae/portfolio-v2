@@ -2,11 +2,12 @@
 
 #projectsContainer {
   position: fixed;
-  left: 15vw;
-  top: 5vh;
+  left: 18vw;
+  top: calc((100vh - 36vw) / 2);
   z-index: 2;
   color: red;
-  width: 70vw;
+  width: 64vw;
+  height: 50vw;
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
   text-align: center;
@@ -21,25 +22,7 @@
   z-index: 2;
 }
 
-#projectsHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--cups);
-  
-  height: 100px;
-  margin-bottom: 0px;
-  color: white;
-  font-size: 50px;
-  text-shadow: 0px 0px 7px black;
 
-  /*   box-shadow: 0 0 8px 2px white;
- */
- border: 6px ridge rgb(172, 129, 22);
-  border-bottom: none;
- 
-  clip-path: inset(-30px -30px -6px -30px);
-}
 
 * {
   outline: none;
@@ -59,9 +42,10 @@
   border-radius: 30px;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding: 15px 40px;
+  padding: 10px 30px;
+
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   cursor: cursor;
 }
 
@@ -90,12 +74,12 @@
 
 .slider-wrapper {
   position: relative;
-  height: 70vh;
+  height: 36vw;
   overflow: hidden;
   /*  box-shadow: 0 0 8px 1px white; */
   border: 6px ridge rgb(172, 129, 22);
-  border-top: none;
-  clip-path: inset(0px -30px -30px -30px);
+ 
+ 
 }
 
 .slide {
@@ -166,14 +150,16 @@
 }
 
 .slider-content .inner {
-  padding: 0 70px;
+  background-image: linear-gradient(0deg, black 30%, transparent);
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 50%;
+  padding: 28px;
+ 
+  bottom: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
 
 .slider-content .inner button {
@@ -186,15 +172,15 @@
   margin: 0 auto;
   max-width: 840px;
   color: #ffffff;
-  font-size: 64px;
+  font-size: 42px;
   line-height: 1;
 }
 
 .slider-content .inner p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
-  margin: 20px auto 30px;
+  margin: 20px auto 20px;
   max-width: 640px;
 }
 
