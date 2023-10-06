@@ -20,8 +20,8 @@ const {t} = useTranslation()
         t('projects-1-description'),
       button: t('projects-visit'),
       image: "https://i.imgur.com/9VjHrAd.png",
-      user: "Myself :)",
-      userProfile: "https://i.imgur.com/sU8LWZt.jpg",
+      user: "Akash Kumar :)",
+      userProfile: "https://avatars.githubusercontent.com/u/115633122?v=4",
       website: "https://couplesgame.netlify.app/"
     },
     {
@@ -30,7 +30,6 @@ const {t} = useTranslation()
       button: t('projects-visit'),
       image: "https://i.imgur.com/2lFHrIs.jpg",
       user: "Just Move",
-      userProfile: "https://i.imgur.com/0Clfnu7.png",
       userProfile: "https://i.imgur.com/sU8LWZt.jpg",
       website: "https://jmgrafik.netlify.app/"
     },
@@ -39,8 +38,8 @@ const {t} = useTranslation()
       description: t('projects-3-description'),
       button: t('projects-visit'),
       image: "https://i.imgur.com/rbvC7fw.png",
-      user: "Bruno Vizovskyy",
-      userProfile: "https://i.imgur.com/4KeKvtH.png",
+      user: "Marko Anić",
+      userProfile: "https://avatars.githubusercontent.com/u/73799942?v=4",
       website: "https://task-better-weigh.netlify.app/"
     }
   ];
