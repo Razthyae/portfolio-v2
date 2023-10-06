@@ -63,7 +63,9 @@ const {t} = useTranslation()
         }}
         >
           <div className="inner">
+          
             <h1>{item.title}</h1>
+            <hr className="projectsHr" />
             <p>{item.description}</p>
             <a href={item.website}>
             <button>{item.button}</button>

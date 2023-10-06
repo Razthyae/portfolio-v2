@@ -22,7 +22,20 @@
   z-index: 2;
 }
 
+.projectsHr {
+  width: 50%;
+  border: 1px solid gray;
+  transition: all 1.3s ease;
+  transform: translateX(-170px);
+  opacity: 0;
+}
 
+
+.slide.animateIn.previous hr, .slide.current hr, .slide.animateIn.next hr {
+  transform: translateX(0);
+  transition-delay: .9s;
+  opacity: 1;
+}
 
 * {
   outline: none;
