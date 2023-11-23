@@ -4,7 +4,7 @@ I've created a website acting as my portfolio hub. It showcases my various proje
 
 ![Page overview](/public/Screenshot.png?raw=true)
 
-## Stack
+# Stack
 - HTML
 - JS
 - CSS
@@ -13,7 +13,9 @@ I've created a website acting as my portfolio hub. It showcases my various proje
 - i18next
 - SweetAlert2
 
+# Live version
 
+https://akumardev.netlify.app/
 
 # Getting Started with Create React App
 
