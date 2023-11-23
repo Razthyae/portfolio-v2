@@ -1,3 +1,20 @@
+# About project
+
+I've created a website acting as my portfolio hub. It showcases my various projects and offers an easy way for recruiters or clients to reach out to me.
+
+![Page overview](/public/Screenshot.png?raw=true)
+
+## Stack
+- HTML
+- JS
+- CSS
+- React
+- Framer Motion
+- i18next
+- SweetAlert2
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
