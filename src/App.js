@@ -57,8 +57,8 @@ function App() {
 
     const backgroundSmaller = () => {
       let background = document.getElementById("background");
-      background.style.width = "35vw";
-      background.style.height = "35vw";
+      background.style.width = "75vh";
+      background.style.height = "75vh";
     };
 
     location.pathname !== "/" ? backgroundBigger() : backgroundSmaller();
