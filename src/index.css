@@ -16,10 +16,6 @@ html {
       font-size: 37.5%; /* 1rem = 8px; 8px/16px = 50% */
   }
 
-   /* It will be applied to TABLET-PORTRAIT / PHONE */
-   @media only screen and (max-height: 600px) {
-    font-size: 37.5%; /* 1rem = 8px; 8px/16px = 50% */
-}
 
 
 }
