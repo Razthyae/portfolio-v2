@@ -6,7 +6,6 @@
     top: 60%;
     width: 100%;
     transform: translate(0, -50%);
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -15,9 +14,9 @@
 
 .navButtons {
     background-color: #DCC4AA;
-    height: 100px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    height: 14vh;
+    width: 100%;
+    margin: 3.5vh 0px;
     z-index: -1;
     border: 3px solid #33281C;
     display: flex;
@@ -34,22 +33,25 @@
 
 .navButtons a {
     color: black;
-    font-size: 34px;
-    
-    text-decoration: none;
+    font-size: 3.5rem;
     width: 15vw;
+    text-decoration: none;
+   
 }
 
 .navButtons:hover a {
     color: white;
+  
 }
 
 .left {
-    padding-left: 10vw;
+ padding-left: 22vh;
     }
 
-.right {
-    padding-left: 25vw;
+.right a{
+    position: relative; 
+    left: 55vh;
+   
     text-align: right;
 }
 
@@ -118,4 +120,8 @@ width: 40vw;
     }
    }
 
-
+@media (orientation: portrait) {
+    #main {
+        display: none;
+    }
+}

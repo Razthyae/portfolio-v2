@@ -27,7 +27,7 @@ export const AboutMe = () => {
         <h1>{t("about-hi")}</h1>
         <h3>{t("about-akash")}</h3>
         <p className="introp">{t("about-technical")}</p>
-        <p className="introp">{t("about-scroll")}</p>
+        <p className="introp" id="scrolldownp">{t("about-scroll")}</p>
 
         <div className="scrollarrowscontainer">
           <motion.div
