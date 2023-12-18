@@ -80,7 +80,7 @@ function App() {
   useEffect(handleNavigation, [location.pathname]);
 
   return (
-    <div>
+    <div id="portfolio">
       <GoBack />
       <div id="background"></div>
 
