@@ -1,0 +1,38 @@
+.overlay {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: -99;
+    transition-property: opacity;
+    transition-duration: 1s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+  }
+
+  #rotateimg {
+    height: 10vh;
+  }
+
+  @media (orientation: portrait) {
+    .overlay {
+      opacity: 1;
+      z-index: 99;
+ 
+    }
+  
+  
+  
+    #portfolio {
+      display: none;
+    }
+  }
