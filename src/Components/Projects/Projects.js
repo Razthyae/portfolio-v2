@@ -38,7 +38,7 @@ const {t} = useTranslation()
       title: t('projects-2-title'),
       description: t('projects-2-description'),
       button: t('projects-visit'),
-      image: "https://i.imgur.com/2lFHrIs.jpg",
+      image: "https://i.imgur.com/ZdVuOGj.png",
       user: "Just Move",
       userProfile: "https://i.imgur.com/sU8LWZt.jpg",
       website: "https://jmgrafik.netlify.app/"
