@@ -6,6 +6,8 @@ import Html from './html.svg'
 import Css from './css.svg'
 import JavaScript from './javascript.svg'
 import TypeScript from './typescript.svg'
+import Vue from './vue.svg'
+import Jest from './jest.svg'
 import ReactImg from './react.svg'
 import Redux from './redux.svg'
 import Emotion from './emotion.png'
@@ -61,6 +63,10 @@ const {t} = useTranslation()
             <h2 className="skillsCategory">{t('skills-libraries')}</h2>
                 <hr></hr>
                 <section id='libraries'>
+                    <div id='vue' className="skillsTile">
+                        <img src={Vue} alt="Vue icon"></img>
+                        <span className="skillsDescription">Vue</span>
+                    </div>
                     <div id='react' className="skillsTile">
                         <img src={ReactImg} alt="React icon"></img>
                         <span className="skillsDescription">React</span>
@@ -68,14 +74,6 @@ const {t} = useTranslation()
                     <div id='redux' className="skillsTile">
                         <img src={Redux} alt="Redux icon"></img>
                         <span className="skillsDescription">React <br></br>/Redux</span>
-                    </div>
-                    <div id='emotion' className="skillsTile">
-                        <img src={Emotion} alt="Emotion React icon"></img>
-                        <span className="skillsDescription">Emotion React</span>
-                    </div>
-                    <div id='framer' className="skillsTile">
-                        <img src={Framer} alt="Framer Motion icon"></img>
-                        <span className="skillsDescription">Framer Motion</span>
                     </div>
                     <div id='tailwind' className="skillsTile">
                         <img src={Tailwind} alt="Tailwind icon"></img>
@@ -107,9 +105,9 @@ const {t} = useTranslation()
             <h2 className="skillsCategory">{t('skills-testing')}</h2>
                 <hr></hr>
                 <section id='testing'>
-                    <div id='mocha' className="skillsTile">
-                        <img src={Mocha} alt="Mocha icon"></img>
-                        <span className="skillsDescription">Mocha</span>
+                    <div id='jest' className="skillsTile">
+                        <img src={Jest} alt="Jest icon"></img>
+                        <span className="skillsDescription">Jest</span>
                     </div>
                 </section>
             </fieldset>

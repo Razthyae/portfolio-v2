@@ -15,6 +15,16 @@ const {t} = useTranslation()
 
   const content = [
     {
+      title: t('projects-4-title'),
+      description:
+        t('projects-4-description'),
+      button: t('projects-visit'),
+      image: "https://i.imgur.com/xsABjYH.png",
+      user: "PRIZM",
+      userProfile: "https://imgur.com/SokoSlD.png",
+      website: "https://photos2stl.com/"
+    },
+    {
       title: t('projects-1-title'),
       description:
         t('projects-1-description'),
